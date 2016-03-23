@@ -14,3 +14,7 @@ This project is about presidential election in 2016.
 - query-ui
 - bootstrap ( for responsive )
 
+#### Data
+
+- .json
+- .js
