@@ -2,22 +2,133 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Empty Example</title>
+	<title>Shadow Election Test 1</title>
+	<!--import css files: bootstrap,jquery-ui, style-->
+  <link rel="stylesheet" type="text/css" rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui-1.10.2.custom.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--import js files: jquery, jquery-ui, filter.js, auto.js-->
+  <script src="scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="scripts/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+  <script src="scripts/filter.js" type="text/javascript"></script>
+  <script src="data/shadow-test.js" type="text/javascript"></script>
+	<!--import js main file-->
+	<script type="text/javascript" src="scripts/main-script.js" async></script>
 </head>
 <body>
+	<header>
+		<h2>Shadow Election</h2>
+	</header>
 
-<header></header>
+	<div class="container">
 
-<div id="p">
-<p>1st paragraph</p>
-</div>
+    <!--sidebar filters-->
+	  <div class="sidebar col-md-3">
+	    <div>
+          <h4><span id="total_voices">3</span><br>VOICE</h4>
+      </div><br>			
 
-<footer></footer>
+      <!--fieldset: age slider-->
+      <div class="well">
+        <fieldset id="age_criteria">
+            <legend>AGE</legend> 
+            <span id="age_range_label" class="slider-label">15 - 100</span>
+            <div id="age_slider" class="slider"></div>
+            <input type="hidden" id="age_filter" value="15-100" fjs-criteria="field=age,type=range">
+        </fieldset>
+      </div>  
+      
+      <!--checkboxes-->   	
+      <div class="well">
+        <fieldset id="issue_criteria">
+          <legend>ISSUE</legend>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="All" id="all_issue">
+                <span>All</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Climate Change">
+                <span>Climate Change</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Gun Safety">
+                <span>Gun Safety</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Criminal Justice Reform">
+                <span>Criminal Justice Reform</span> 
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Economic Equality">
+                <span>Economic Equality</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Reproductive Health Laws">
+                <span>Reproductive Health Laws</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Tax Reform">
+                <span>Tax Reform</span>
+              </label>
+            </div>            
+        </fieldset>
+      </div>    
+	  </div>
 
+    <!--row content-->
+	  <div class="col-md-9">
+        <div class="voice-content-row" id="voice" fjs-items="template=#voice-template"></div>
+    </div>
+	</div>
 
+	<footer></footer>
 
-	<script type="text/javascript" src="scripts/main-script.js" async></script>
-	<script type="text/javascript" src="scripts/app.js" async></script>
+	<script id="voice-template" type="text/html">
+  	<div class="col-md-4 voice">
+    		<div class="thumbnail">
+      			<span class="label label-voice group"><%= id %></span>
+      			<div class="caption">
+        			<h4><%= _fid %>. <%= name %></h4>
+       				<div class="description">
+          				<%= description %>
+          				<br><span class="vote"><%= vote %></span>
+        			</div>
+        			<div class="detail">
+          		  	<dl>
+           		   		<dt>Country</dt>
+            	    	<dd><%= country %></dd>
+                    <dt>Age</dt>
+                    <dd><%= age %></dt>
+               	    <dt>Group</dt>
+                    <dd><%= group %></dd>
+                  </dl>
+            	</div>
+            </div>
+        </div>
+    </div>
+  </script>
+  <script id="issue_template" type="text/html">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="<%= issue %>"> <%= issue %>
+        </label>
+      </div>
+  </script>
+
+	<!--import js grid-->
+	<script type="text/javascript" src="../scripts/app.js" async></script>
 </body>
 </html>
