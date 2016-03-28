@@ -6,7 +6,7 @@ var voices = [
     "country": "United States",
     "age": 15,
     "gender": "Female",
-    "group": "under 18",
+    "group": "Under 18",
     "vote": "Hillary Clinton",
     "issue": [
       "Climate Change",
@@ -24,7 +24,7 @@ var voices = [
     "country": "Turkey",
     "age": 32,
     "gender": "Male",
-    "group": "international worker",
+    "group": "International Worker",
     "vote": "Donald Trump",
     "issue": [
       "Gun Safety",
@@ -41,7 +41,7 @@ var voices = [
     "country": "China",
     "age": 22,
     "gender": "Female",
-    "group": "international student",
+    "group": "International Student",
     "vote": "Hillary Clinton",
     "issue": [
       "Climate Change",
