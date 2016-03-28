@@ -41,10 +41,11 @@ $(document).ready(function(){
     batch_size: 50
   });
 
-  FJS.addCriteria({field: 'year', ele: '#year_filter', type: 'range', all: 'all'});
+  // FJS.addCriteria({field: 'year', ele: '#year_filter', type: 'range', all: 'all'}); --> this is for drop down options
   FJS.addCriteria({field: 'age', ele: '#age_filter', type: 'range'});
-  FJS.addCriteria({field: 'runtime', ele: '#runtime_filter', type: 'range'});
+  FJS.addCriteria({field: 'group', ele: '#status_criteria input:checkbox'});
   FJS.addCriteria({field: 'issue', ele: '#issue_criteria input:checkbox'});
+
 
   /*
    * Add multiple criterial.
@@ -57,6 +58,7 @@ $(document).ready(function(){
   window.FJS = FJS;
 });
 
+// sliders and checkbox event functions.
 function initSliders(){
   $("#age_slider").slider({
     min: 15,
@@ -70,17 +72,7 @@ function initSliders(){
     }
   });
 
-  $("#runtime_slider").slider({
-    min: 50,
-    max: 250,
-    values:[0, 250],
-    step: 10,
-    range:true,
-    slide: function( event, ui ) {
-      $("#runtime_range_label" ).html(ui.values[ 0 ] + ' mins. - ' + ui.values[ 1 ] + ' mins.');
-      $('#runtime_filter').val(ui.values[0] + '-' + ui.values[1]).trigger('change');
-    }
-  });
+  $('#status_criteria :checkbox').prop('checked', false);
 
   $('#issue_criteria :checkbox').prop('checked', false);
   $('#all_issue').on('click', function(){

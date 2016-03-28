@@ -37,6 +37,55 @@
             <input type="hidden" id="age_filter" value="15-100" fjs-criteria="field=age,type=range">
         </fieldset>
       </div>  
+
+      <!--checkboxes-->     
+      <div class="well">
+        <fieldset id="status_criteria">
+          <legend>S T A T U S</legend>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="International Students">
+                <span>International Students</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Foreign Workers">
+                <span>Foreign Workers</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Convicted Felons">
+                <span>Convicted Felons</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Under 18">
+                <span>Under 18</span> 
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Undocumented Residents">
+                <span>Undocumented Residents</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="US Territory Residents">
+                <span>US Territory Residents</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Foreigners outside the US">
+                <span>Foreigners outside the US</span>
+              </label>
+            </div>            
+        </fieldset>
+      </div>    
       
       <div class="well">
         <fieldset id="issue_criteria">
@@ -119,6 +168,17 @@
         </div>
     </div>
   </script>
+
+  <!--get status/group data-->
+  <script id="status_template" type="text/html">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="<%= group %>"> <%= group %>
+        </label>
+      </div>
+  </script>
+
+  <!--get issue data-->
   <script id="issue_template" type="text/html">
       <div class="checkbox">
         <label>
