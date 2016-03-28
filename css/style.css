@@ -1,6 +1,7 @@
 body{
   /* background-color: #f5f5f5; */
   font-family: "Open Sans", sans-serif;
+  color: #4A174F;
 }
 
 header{
@@ -35,6 +36,7 @@ select:focus, textarea:focus, input:focus{
 
 .container{
   margin:0 auto;
+  margin-top: 50px;
 }
 
 .sidebar{
@@ -57,6 +59,8 @@ select:focus, textarea:focus, input:focus{
   -webkit-box-shadow: none; 
    box-shadow: none;
 }
+
+
 
 .sidebar h4{
   padding-left: 0px;
@@ -87,6 +91,7 @@ select:focus, textarea:focus, input:focus{
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+  color: #4A174F;
 }
 
 .criteria{
@@ -121,6 +126,7 @@ select:focus, textarea:focus, input:focus{
 
 .caption .detail{
   margin-top: 15px;
+  color: #4A174F;
 }
 
 .caption .field{
@@ -130,8 +136,10 @@ select:focus, textarea:focus, input:focus{
 }
 
 .caption h4{
-  color: #b22222;
+  color: #4A174F;
   min-height: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .field-row{
@@ -190,6 +198,7 @@ select:focus, textarea:focus, input:focus{
   text-align: center;
   margin-bottom: 0px;
   font-weight: 200;
+  color: #4A174F;
 }
 
 .caption:hover .description{
@@ -220,7 +229,7 @@ select:focus, textarea:focus, input:focus{
 
 .ui-widget-header{
   background: none;
-  background-color: #222;
+  background-color: #4A174F;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-state-foucs{
@@ -230,6 +239,7 @@ select:focus, textarea:focus, input:focus{
 
 .slider{
   margin: 0 20px;
+
 }
 
 .slider-label{
@@ -250,6 +260,10 @@ select:focus, textarea:focus, input:focus{
   font-size: 20px;
   color: #222;
   float: right;
+}
+.ui-slider-handle{
+  border-radius: 100%;
+  outline: none;
 }
 
 .voices-pagination{
