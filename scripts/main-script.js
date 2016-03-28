@@ -35,11 +35,11 @@ $(document).ready(function(){
     }
   });
 
-  FJS.setStreaming({
-    data_url: '../data/stream_voices.json',
-    stream_after: 1,
-    batch_size: 50
-  });
+  // FJS.setStreaming({
+  //   data_url: '../data/stream_voices.json',
+  //   stream_after: 1,
+  //   batch_size: 50
+  // });
 
   // FJS.addCriteria({field: 'year', ele: '#year_filter', type: 'range', all: 'all'}); --> this is for drop down options
   FJS.addCriteria({field: 'age', ele: '#age_filter', type: 'range'});

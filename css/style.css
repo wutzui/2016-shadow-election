@@ -266,6 +266,12 @@ select:focus, textarea:focus, input:focus{
   outline: none;
 }
 
+#total_voices{
+  font-size: 25px;
+  font-weight: 700; 
+}
+
+
 .voices-pagination{
   text-align: center;
 }
