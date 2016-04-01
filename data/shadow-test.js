@@ -2,6 +2,7 @@ var voices = [
 
   {
     "id": 1,
+    "img": "img/id_1.png",
     "name": "Mary Simpson",
     "country": "United States",
     "age": 15,
@@ -20,6 +21,7 @@ var voices = [
 
   {
     "id": 2,
+    "img": "img/id_2.png",
     "name": "Ben Martiney",
     "country": "Turkey",
     "age": 32,
@@ -37,6 +39,7 @@ var voices = [
 
   {
     "id": 3,
+    "img": "img/id_3.png",
     "name": "Ming Shan Huang",
     "country": "China",
     "age": 22,
