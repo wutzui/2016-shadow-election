@@ -2,6 +2,14 @@ $(document).ready(function(){
 
   initSliders();
 
+  $('a.page-scroll').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: ($($anchor.attr('href')).offset().top - 50)
+    }, 1250, 'easeInOutExpo');
+    event.preventDefault();
+  });  
+
   //NOTE: To append in different container
   var appendToContainer = function(htmlele, record){
     console.log(record)
@@ -45,7 +53,8 @@ $(document).ready(function(){
   FJS.addCriteria({field: 'age', ele: '#age_filter', type: 'range'});
   FJS.addCriteria({field: 'group', ele: '#status_criteria input:checkbox'});
   FJS.addCriteria({field: 'issue', ele: '#issue_criteria input:checkbox'});
-
+  FJS.addCriteria({field: 'gender', ele: '#gender_criteria input:checkbox'});
+  FJS.addCriteria({field: 'vote', ele: '#vote_criteria input:checkbox'});
 
   /*
    * Add multiple criterial.
@@ -72,7 +81,16 @@ function initSliders(){
     }
   });
 
+  $('#gender_criteria :checkbox').prop('checked', false);
+
   $('#status_criteria :checkbox').prop('checked', false);
+
+  $('#vote_criteria :checkbox').prop('checked', false);
+
+  $('.button').click(function(){
+    $(this).toggleClass("down");
+  });
+
 
   $('#issue_criteria :checkbox').prop('checked', false);
   $('#all_issue').on('click', function(){

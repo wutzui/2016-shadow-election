@@ -2,17 +2,37 @@ body{
   /* background-color: #f5f5f5; */
   font-family: "Open Sans", sans-serif;
   color: #4A174F;
+  margin: 0;
+  padding: 0;
 }
 
 header{
   width: 100%;
-  height: 100px;
+  left: 0;
+}
+
+#nav {
+  z-index: -999;
+  width: 100%
+}
+
+#pitch {
+  z-index: 999; 
+  position: absolute; 
+  margin-top: -475px;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: "Avenir-Light";
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
 }
 
 header h2 {
   margin-left: 60px;
 }
-
 
 h4, dd, .checkbox label{
   font-weight: 200;
@@ -22,7 +42,7 @@ dt{
   font-weight: 400;
 }
 
-select, textarea, input{
+select, textarea, input {
   border-radius: 0 !important;
   font-weight: 200;
   -webkit-box-shadow: none;
@@ -30,16 +50,18 @@ select, textarea, input{
   box-shadow: none !important;
 }
 
-select:focus, textarea:focus, input:focus{
+select:focus, textarea:focus, input:focus {
   border-color: #CCC !important;
 }
 
-.container{
+.container {
   margin:0 auto;
   margin-top: 50px;
+  position: relative;
+  height: 1000px;
 }
 
-.sidebar{
+.sidebar {
   top: 0;
   left: 0;
   bottom: 0;
@@ -48,25 +70,31 @@ select:focus, textarea:focus, input:focus{
   /* background-color: #f5f5f5; */
 }
 
-.sidebar.col-md-3{
+.sidebar.col-md-3 {
   padding: 0px;
 }
 
-.sidebar .well{
+.sidebar .well {
   border-radius: 0px;
   /* background-color: #EEE; */
   background-color: #FFF;
   -webkit-box-shadow: none; 
-   box-shadow: none;
+  box-shadow: none;
 }
 
-
+.img-responsive {
+  border-radius: 100%;
+  width: 170px;
+  margin-top: 20px;
+  border-color: blue;
+}
 
 .sidebar h4{
   padding-left: 0px;
+  padding-bottom: 0px;
+  font-size: 25px;
   text-align: center;
 }
-
 
 .sidebar .row{
   border-bottom: 2px solid #20B2AA;
@@ -118,6 +146,7 @@ select:focus, textarea:focus, input:focus{
   min-height: 265px;
   border-radius: 0;
   min-height: 300px;
+  border: none;
 }
 
 .label{
@@ -195,7 +224,7 @@ select:focus, textarea:focus, input:focus{
   margin-top: 5px;
   margin-right: 5px;
   padding: 5px 15px;
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 0px;
   font-weight: 200;
   color: #4A174F;
@@ -226,7 +255,6 @@ select:focus, textarea:focus, input:focus{
   margin-right: 3px;
 }
 
-
 .ui-widget-header{
   background: none;
   background-color: #4A174F;
@@ -239,7 +267,6 @@ select:focus, textarea:focus, input:focus{
 
 .slider{
   margin: 0 20px;
-
 }
 
 .slider-label{
@@ -261,6 +288,7 @@ select:focus, textarea:focus, input:focus{
   color: #222;
   float: right;
 }
+
 .ui-slider-handle{
   border-radius: 100%;
   outline: none;
@@ -270,7 +298,6 @@ select:focus, textarea:focus, input:focus{
   font-size: 25px;
   font-weight: 700; 
 }
-
 
 .voices-pagination{
   text-align: center;
@@ -284,3 +311,101 @@ select:focus, textarea:focus, input:focus{
   background-color: #AAA;
   border-color: #AAA;
 }
+
+#gender_criteria {
+  margin-bottom: -35px;
+}
+
+#gender_criteria .checkbox{
+  display: inline-block;
+}
+
+#age_criteria {
+  margin-bottom: -35px;
+}
+
+.vote span {
+  font-weight: 700;
+}
+
+fieldset{
+    padding-bottom: 25px;
+}
+
+/*vote-criteria: round-shape buttons display in one line*/
+#vote_criteria .round{
+    display: inline-block;
+}
+
+/*vote-criteria: clinton round shape img*/
+.round-clinton {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/clinton.png");
+  cursor: pointer;
+}
+
+.round-clinton label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+/*vote-criteria: cruz round shape img*/
+.round-cruz {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/cruz.png");
+}
+
+.round-cruz label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+/*vote-criteria: kasich round shape img*/
+.round-kasich {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/kasich.png");
+}
+
+.round-kasich label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+/*vote-criteria: sanders round shape img*/
+.round-sanders {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/sanders.png");
+}
+
+.round-sanders label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+/*vote-criteria: trump round shape img*/
+.round-trump {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/trump.png");
+}
+
+.round-trump label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+
