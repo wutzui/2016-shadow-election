@@ -85,15 +85,23 @@ function initSliders(){
 
   $('#status_criteria :checkbox').prop('checked', false);
 
-  $('#vote_criteria :checkbox').prop('checked', false);
+  $('#issue_criteria :checkbox').prop('checked', false); 
+  
+  $('.round').click(function(){
+    var $voteChecked = $(this);
+    $voteChecked.animate({
+      opacity:($voteChecked.css('opacity')== 0.5) ? 1 : 0.5});
+  })
 
-  $('.button').click(function(){
-    $(this).toggleClass("down");
-  });
+  var $voteCheckbox = $('#vote_criteria :checkbox');
+  $voteCheckbox.prop('checked', false);
 
 
-  $('#issue_criteria :checkbox').prop('checked', false);
+  
   $('#all_issue').on('click', function(){
     $('#issue_criteria :checkbox').prop('checked', $(this).is(':checked'));
   });
+
+
+
 }

@@ -333,8 +333,12 @@ fieldset{
 }
 
 /*vote-criteria: round-shape buttons display in one line*/
-#vote_criteria .round{
-    display: inline-block;
+.round{
+  display: inline-block;
+  opacity: 0.5;    
+  cursor: pointer;  
+/*  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;    */
 }
 
 /*vote-criteria: clinton round shape img*/
@@ -343,7 +347,6 @@ fieldset{
   height: 45px;
   position: relative;
   background-image: url("../assets/clinton.png");
-  cursor: pointer;
 }
 
 .round-clinton label {
@@ -370,8 +373,8 @@ fieldset{
 .round-kasich {
   width: 45px;
   height: 45px;
-  position: relative;
-  background-image: url("../assets/kasich.png");
+  position: relative; 
+  background-image: url("../assets/kasich.png"); 
 }
 
 .round-kasich label {
@@ -385,7 +388,7 @@ fieldset{
   width: 45px;
   height: 45px;
   position: relative;
-  background-image: url("../assets/sanders.png");
+  background-image: url("../assets/sanders.png"); 
 }
 
 .round-sanders label {
