@@ -50,6 +50,11 @@ select, textarea, input {
   box-shadow: none !important;
 }
 
+input {
+  width: 0px;
+  height: 0px;
+}
+
 select:focus, textarea:focus, input:focus {
   border-color: #CCC !important;
 }
@@ -67,6 +72,7 @@ select:focus, textarea:focus, input:focus {
   bottom: 0;
   overflow-y: auto;
   min-height: 600px;
+
   /* background-color: #f5f5f5; */
 }
 
@@ -110,6 +116,11 @@ select:focus, textarea:focus, input:focus {
   border-radius: 0;
 }
 
+.container {
+  width: 1200px;
+
+}
+
 .sidebar .progress-bar{
   background-color: #F08080;
   border-radius: 0;
@@ -120,6 +131,7 @@ select:focus, textarea:focus, input:focus {
   font-weight: 300;
   text-align: center;
   color: #4A174F;
+  margin-bottom: 10px; 
 }
 
 .criteria{
@@ -329,8 +341,9 @@ select:focus, textarea:focus, input:focus {
 }
 
 fieldset{
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
+
 
 /*vote-criteria: round-shape buttons display in one line*/
 .round{
@@ -410,5 +423,6 @@ fieldset{
   width: 45px;
   height: 45px;
 }
+
 
 
