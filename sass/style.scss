@@ -1,0 +1,434 @@
+@import 'reset';
+@import 'variables';
+@import 'grid';
+
+// =================================================================================
+// Body
+// =================================================================================
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #4A174F;
+  margin: 0;
+  padding: 0;
+  max-width: $width-1280;
+}
+
+// =================================================================================
+// Header
+// =================================================================================
+
+header {
+   max-width: 1280px;
+   width: 100%;
+   left: 0;
+   @media screen and (max-width: $width-1024) {
+      width: $width-1024;
+      height: 100vh;
+   }
+   @media screen and (max-width: $width-ipad) {
+      width: $width-ipad;
+      height: 100vh;      
+   }  
+   @media screen and (max-width: $width-phone) {
+      width: $width-phone;
+      height: 100vh;      
+   }
+}
+
+header h2 {
+   margin-left: 60px;
+}
+
+#nav {
+   top: 0;
+   left: 0;
+   max-width: 1280px;
+   width: 1280px;
+   @media screen and (max-width: $width-1024) {
+      width: $width-1024;
+      height: 100vh;
+   }
+   @media screen and (max-width: $width-ipad) {
+      width: $width-ipad;
+      height: 100vh;
+   }
+   @media screen and (max-width: $width-phone) {
+      width: $width-phone;
+      height: 100vh;
+   }
+}
+
+#pitch {
+   margin-top: -20 * $leading;
+   color: white;
+   margin-left: auto;
+   margin-right: auto;
+   letter-spacing: 1px;
+   font-size: 20px;
+   text-align: center;
+   line-height: 40px;
+   width: 12 * ($grid-width + $grid-gutter);
+   @media screen and (max-width: $width-1024) {
+      width: 10 * ($grid-width + $grid-gutter);
+      margin-top: -16 * $leading;
+      font-size: 18px;
+      line-height: 35px;        
+   }
+   @media screen and (max-width: $width-ipad) {
+      width: 7 * ($grid-width + $grid-gutter);
+      margin-top: -16 * $leading;
+      font-size: 16px;
+      line-height: 30px;      
+   }  
+   @media screen and (max-width: $width-phone) {
+      width: 4 * ($grid-width + $grid-gutter);
+      margin-top: -16 * $leading;
+      font-size: 16px;
+      line-height: 30px;
+   }
+}
+
+#top-snap-button {
+   margin-top: 2 * $leading;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: none;
+   border: 2px solid white;
+   font-family: Avenir;
+   letter-spacing: 2px;
+   @media screen and (max-width: $width-1024) {
+      margin-top: 2 * $leading;
+   }
+   @media screen and (max-width: $width-ipad) {
+      margin-top: 2 * $leading;
+   }
+   @media screen and (max-width: $width-phone) {
+      margin-top: 1 * $leading;
+   }   
+}
+
+// =================================================================================
+// input
+// =================================================================================
+
+h4, dd, .checkbox label {
+  font-weight: 200;
+}
+
+dt{
+  font-weight: 400;
+}
+
+select, textarea, input {
+  border-radius: 0 !important;
+  font-weight: 200;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none !important;
+}
+
+input {
+  width: 0px;
+  height: 0px;
+}
+
+select:focus, textarea:focus, input:focus {
+  border-color: #CCC !important;
+}  
+
+// =================================================================================
+// Container
+// =================================================================================
+
+.container {
+  margin:0 auto;
+  margin-top: 50px;
+  top: 11 * $leading;
+  position: relative;
+  height: 1000px;
+  width: 1200px;
+}
+
+// =================================================================================
+// Sidebar
+// =================================================================================
+
+.sidebar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  min-height: 600px;
+}
+
+.sidebar.col-md-3 {
+  padding: 0px;
+}
+
+.sidebar .well {
+  border-radius: 0px;
+  background-color: #FFF;
+  -webkit-box-shadow: none; 
+  box-shadow: none;
+}
+
+.sidebar h4{
+  padding-left: 0px;
+  padding-bottom: 0px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.sidebar legend{
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: #4A174F;
+  margin-bottom: 10px; 
+}
+
+.sidebar .row{
+  border-bottom: 2px solid #20B2AA;
+  margin-bottom: 10px;
+}
+
+fieldset{
+    padding-bottom: 20px;
+}
+
+// =================================================================================
+// Sidebar: voice
+// =================================================================================
+
+.voice{
+  margin-bottom: 20px;
+  padding-right: 5px;
+}
+
+.voice h4{
+  margin-top: 15px;
+  margin-bottom: -5px;
+  border-bottom: 1px solid #A9A9A9;
+  padding-bottom: 7px;
+  letter-spacing: 4px; // not working
+}
+
+#total_voices{
+  font-size: 25px;
+  font-weight: 700; 
+}
+
+// =================================================================================
+// Sidebar: status
+// =================================================================================
+
+#status_criteria {
+   margin-bottom: -10px;   
+}
+
+// =================================================================================
+// Sidebar: vote / round buttons
+// =================================================================================
+
+/*vote-criteria: round-shape buttons display in one line*/
+.round{
+  display: inline-block;
+  opacity: 0.5;    
+  cursor: pointer;  
+}
+
+/*vote-criteria: clinton round shape img*/
+.round-clinton {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/clinton.png");
+}
+
+.round-clinton label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+/*vote-criteria: cruz round shape img*/
+.round-cruz {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/cruz.png");
+}
+
+.round-cruz label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+/*vote-criteria: kasich round shape img*/
+.round-kasich {
+  width: 45px;
+  height: 45px;
+  position: relative; 
+  background-image: url("../assets/kasich.png"); 
+}
+
+.round-kasich label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+/*vote-criteria: sanders round shape img*/
+.round-sanders {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/sanders.png"); 
+}
+
+.round-sanders label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+/*vote-criteria: trump round shape img*/
+.round-trump {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-image: url("../assets/trump.png");
+}
+
+.round-trump label {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+}
+
+// =================================================================================
+// Sidebar: age
+// =================================================================================
+
+.age{
+  float: right;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-right: -5px;
+  background-color: #222;
+}
+
+#age_criteria {
+  margin-bottom: -35px;
+}
+
+.age .glyphicon{
+  vertical-align: middle;
+  color: #fff;
+  margin-top: -5px;
+}
+
+// =================================================================================
+// Sidebar: gender
+// =================================================================================
+
+#gender_criteria {
+  margin-bottom: -35px;
+}
+
+#gender_criteria .checkbox{
+  display: inline-block;
+}
+
+// =================================================================================
+// script data content in index.html
+// =================================================================================
+
+.thumbnail{
+  /* background-color: #EEE; */
+  min-height: 265px;
+  border-radius: 0;
+  min-height: 300px;
+  border: none;
+}
+
+.img-responsive {
+  border-radius: 100%;
+  width: 170px;
+  margin-top: 20px;
+  border-color: blue;
+}
+
+.caption .detail{
+  margin-top: 15px;
+  color: #4A174F;
+}
+
+.caption .field{
+  font-weight: bold;
+  float: left;
+  width: 65px;
+}
+
+.caption h4{
+  color: #4A174F;
+  min-height: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.description {
+  display: block;
+  position: absolute;
+  left: 15px;
+  height: auto;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px 15px;
+  margin-bottom: 0px;
+  font-weight: 200;
+  color: #4A174F;
+  @include transition;    
+}
+
+.caption:hover .description{
+  opacity: 1;
+}
+
+.caption:hover .detail{
+  opacity: 0;
+}
+
+// =================================================================================
+// Jquery ui
+// =================================================================================
+
+.ui-widget-header{
+  background: none;
+  background-color: #4A174F;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-state-foucs{
+  background-color: #000;
+  border: 1px black solid;
+}
+
+.slider{
+  margin: 0 20px;
+}
+
+.slider-label{
+  display: block;
+  text-align: center;
+  font-weight: 200;
+}
+
+.ui-slider-handle{
+  border-radius: 100%;
+  outline: none;
+}
+

@@ -1,6 +1,12 @@
 $(document).ready(function(){
 
-  initSliders();
+  'use strict';
+  
+  initSliders(); 
+
+// =================================================================================
+// snap scroll down
+// =================================================================================
 
   $('a.page-scroll').bind('click', function(event) {
     var $anchor = $(this);
@@ -9,6 +15,11 @@ $(document).ready(function(){
     }, 1250, 'easeInOutExpo');
     event.preventDefault();
   });  
+
+
+// =================================================================================
+// Filter.js
+// =================================================================================
 
   //NOTE: To append in different container
   var appendToContainer = function(htmlele, record){
@@ -43,12 +54,6 @@ $(document).ready(function(){
     }
   });
 
-  // FJS.setStreaming({
-  //   data_url: '../data/stream_voices.json',
-  //   stream_after: 1,
-  //   batch_size: 50
-  // });
-
   // FJS.addCriteria({field: 'year', ele: '#year_filter', type: 'range', all: 'all'}); --> this is for drop down options
   FJS.addCriteria({field: 'age', ele: '#age_filter', type: 'range'});
   FJS.addCriteria({field: 'group', ele: '#status_criteria input:checkbox'});
@@ -56,52 +61,55 @@ $(document).ready(function(){
   FJS.addCriteria({field: 'gender', ele: '#gender_criteria input:checkbox'});
   FJS.addCriteria({field: 'vote', ele: '#vote_criteria input:checkbox'});
 
-  /*
-   * Add multiple criterial.
-    FJS.addCriteria([
-      {field: 'issue', ele: '#issue_criteria input:checkbox'},
-      {field: 'year', ele: '#year_filter', type: 'range'}
-    ])
-  */
-
   window.FJS = FJS;
-});
 
+// =================================================================================
 // sliders and checkbox event functions.
-function initSliders(){
-  $("#age_slider").slider({
-    min: 15,
-    max: 100,
-    values:[15, 100],
-    step: 1,
-    range:true,
-    slide: function( event, ui ) {
-      $("#age_range_label" ).html(ui.values[ 0 ] + ' - ' + ui.values[ 1 ]);
-      $('#age_filter').val(ui.values[0] + '-' + ui.values[1]).trigger('change');
-    }
-  });
+// =================================================================================  
 
-  $('#gender_criteria :checkbox').prop('checked', false);
+  function initSliders(){
 
-  $('#status_criteria :checkbox').prop('checked', false);
+    //set variables for slider
+    var $ageSlider = $("#age_slider");
 
-  $('#issue_criteria :checkbox').prop('checked', false); 
+    //apply slider
+    $ageSlider.slider({
+      min: 15,
+      max: 100,
+      values:[15, 100],
+      step: 1,
+      range:true,
+      slide: function( event, ui ) {
+        $("#age_range_label" ).html(ui.values[ 0 ] + ' - ' + ui.values[ 1 ]);
+        $('#age_filter').val(ui.values[0] + '-' + ui.values[1]).trigger('change');
+      }
+    });  
+  }/*end quote of function initSliders*/
+
+  //set variables for checkboxs
+  var $voteCheckbox   = $('#vote_criteria :checkbox');
+  var $genderCheckbox = $('#gender_criteria :checkbox');
+  var $statusCheckbox = $('#status_criteria :checkbox');
+  var $genderCheckbox = $('#issue_criteria :checkbox'); 
+
+  //apply checkboxs
+  $genderCheckbox.prop('checked', false);
+  $statusCheckbox.prop('checked', false);
+  $voteCheckbox.prop('checked', false);  
   
+  //set round buttons toggle opacity.
   $('.round').click(function(){
     var $voteChecked = $(this);
     $voteChecked.animate({
-      opacity:($voteChecked.css('opacity')== 0.5) ? 1 : 0.5});
+    opacity:($voteChecked.css('opacity')== 0.5) ? 1 : 0.5});
   })
 
-  var $voteCheckbox = $('#vote_criteria :checkbox');
-  $voteCheckbox.prop('checked', false);
+  // $issueCheckbox.prop('checked', false); 
+  // $('#all_issue').on('click', function(){
+  //   $('#issue_criteria :checkbox').prop('checked', $(this).is(':checked'));
+  // });
 
 
-  
-  $('#all_issue').on('click', function(){
-    $('#issue_criteria :checkbox').prop('checked', $(this).is(':checked'));
-  });
+});
 
 
-
-}
