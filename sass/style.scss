@@ -23,68 +23,95 @@ header {
    width: 100%;
    left: 0;
    @media screen and (max-width: $width-1024) {
-      width: $width-1024;
-      height: 100vh;
+
    }
    @media screen and (max-width: $width-ipad) {
-      width: $width-ipad;
-      height: 100vh;      
+   
    }  
    @media screen and (max-width: $width-phone) {
-      width: $width-phone;
-      height: 100vh;      
+     
    }
 }
 
-header h2 {
-   margin-left: 60px;
+.title {
+   position: absolute;
+   margin-top: -20 * $leading;
+   left: auto;
+   right: auto;    
+   letter-spacing: 1px;
+   color: white;   
+   text-align: center;
+   width: 100vw;    
+   @media screen and (max-width: $width-1024) {
+      margin-top: -21 * $leading;    
+   }
+   @media screen and (max-width: $width-ipad) {
+      margin-top: -24 * $leading;      
+   }  
+   @media screen and (max-width: $width-phone) {
+      margin-top: -26 * $leading;            
+   }
+
+}
+
+.title h1 {
+   color: white;
+   font-weight: 500;
+   font-size: 48px;  
+   letter-spacing: 10px;
+   @media screen and (max-width: $width-1024) {
+
+   }
+   @media screen and (max-width: $width-ipad) {
+      font-size: 43px;      
+   }  
+   @media screen and (max-width: $width-phone) {
+           
+   }   
 }
 
 #nav {
    top: 0;
    left: 0;
    max-width: 1280px;
-   width: 1280px;
+   width: 100vw;
+   height: 100vh;   
    @media screen and (max-width: $width-1024) {
-      width: $width-1024;
       height: 100vh;
    }
    @media screen and (max-width: $width-ipad) {
-      width: $width-ipad;
       height: 100vh;
    }
    @media screen and (max-width: $width-phone) {
-      width: $width-phone;
       height: 100vh;
    }
 }
 
 #pitch {
-   margin-top: -20 * $leading;
-   color: white;
+   margin-top: -15 * $leading;
    margin-left: auto;
    margin-right: auto;
+   padding-left: 5vw;
+   padding-right: 5vw;       
    letter-spacing: 1px;
+   color: white;   
    font-size: 20px;
    text-align: center;
    line-height: 40px;
-   width: 12 * ($grid-width + $grid-gutter);
-   @media screen and (max-width: $width-1024) {
-      width: 10 * ($grid-width + $grid-gutter);
+   width: 85vw;
+   @media screen and (max-width: $width-1024) {   
       margin-top: -16 * $leading;
       font-size: 18px;
       line-height: 35px;        
    }
-   @media screen and (max-width: $width-ipad) {
-      width: 7 * ($grid-width + $grid-gutter);
-      margin-top: -16 * $leading;
+   @media screen and (max-width: $width-ipad) {        
+      margin-top: -18 * $leading;
       font-size: 16px;
       line-height: 30px;      
    }  
    @media screen and (max-width: $width-phone) {
-      width: 4 * ($grid-width + $grid-gutter);
-      margin-top: -16 * $leading;
-      font-size: 16px;
+      margin-top: -20 * $leading;
+      font-size: 15px;
       line-height: 30px;
    }
 }
@@ -101,13 +128,48 @@ header h2 {
       margin-top: 2 * $leading;
    }
    @media screen and (max-width: $width-ipad) {
-      margin-top: 2 * $leading;
+      margin-top: 1 * $leading;
    }
    @media screen and (max-width: $width-phone) {
       margin-top: 1 * $leading;
+      font-size: 12px;
    }   
 }
 
+#snap-buttons {
+   padding: 20px;
+   @media screen and (max-width: $width-1024) {
+
+   }
+   @media screen and (max-width: $width-ipad) {
+      padding-right: 0;   
+   }
+   @media screen and (max-width: $width-phone) {
+      padding: 0;
+   }         
+}
+
+#top-snap-button-2 {
+   margin-top: 2 * $leading;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 25px;
+   padding-right: 25px;   
+   background-color: none;
+   border: 2px solid white;
+   font-family: Avenir;
+   letter-spacing: 2px;
+   @media screen and (max-width: $width-1024) {
+      margin-top: 2 * $leading;
+   }
+   @media screen and (max-width: $width-ipad) {
+      margin-top: 1 * $leading;
+   }
+   @media screen and (max-width: $width-phone) {
+      margin-top: 1 * $leading;
+      font-size: 12px;
+   }      
+}
 // =================================================================================
 // input
 // =================================================================================

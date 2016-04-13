@@ -59,68 +59,83 @@ header {
   width: 100%;
   left: 0;
 }
+
+.title {
+  position: absolute;
+  margin-top: -480px;
+  left: auto;
+  right: auto;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  width: 100vw;
+}
 @media screen and (max-width: 1024px) {
-  header {
-    width: 1024px;
-    height: 100vh;
+  .title {
+    margin-top: -504px;
   }
 }
 @media screen and (max-width: 768px) {
-  header {
-    width: 768px;
-    height: 100vh;
+  .title {
+    margin-top: -576px;
   }
 }
 @media screen and (max-width: 420px) {
-  header {
-    width: 420px;
-    height: 100vh;
+  .title {
+    margin-top: -624px;
   }
 }
 
-header h2 {
-  margin-left: 60px;
+.title h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: 10px;
+}
+@media screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 43px;
+  }
 }
 
 #nav {
   top: 0;
   left: 0;
   max-width: 1280px;
-  width: 1280px;
+  width: 100vw;
+  height: 100vh;
 }
 @media screen and (max-width: 1024px) {
   #nav {
-    width: 1024px;
     height: 100vh;
   }
 }
 @media screen and (max-width: 768px) {
   #nav {
-    width: 768px;
     height: 100vh;
   }
 }
 @media screen and (max-width: 420px) {
   #nav {
-    width: 420px;
     height: 100vh;
   }
 }
 
 #pitch {
-  margin-top: -480px;
-  color: white;
+  margin-top: -360px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
   letter-spacing: 1px;
+  color: white;
   font-size: 20px;
   text-align: center;
   line-height: 40px;
-  width: 960px;
+  width: 85vw;
 }
 @media screen and (max-width: 1024px) {
   #pitch {
-    width: 800px;
     margin-top: -384px;
     font-size: 18px;
     line-height: 35px;
@@ -128,17 +143,15 @@ header h2 {
 }
 @media screen and (max-width: 768px) {
   #pitch {
-    width: 560px;
-    margin-top: -384px;
+    margin-top: -432px;
     font-size: 16px;
     line-height: 30px;
   }
 }
 @media screen and (max-width: 420px) {
   #pitch {
-    width: 320px;
-    margin-top: -384px;
-    font-size: 16px;
+    margin-top: -480px;
+    font-size: 15px;
     line-height: 30px;
   }
 }
@@ -159,12 +172,55 @@ header h2 {
 }
 @media screen and (max-width: 768px) {
   #top-snap-button {
-    margin-top: 48px;
+    margin-top: 24px;
   }
 }
 @media screen and (max-width: 420px) {
   #top-snap-button {
     margin-top: 24px;
+    font-size: 12px;
+  }
+}
+
+#snap-buttons {
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  #snap-buttons {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  #snap-buttons {
+    padding: 0;
+  }
+}
+
+#top-snap-button-2 {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: none;
+  border: 2px solid white;
+  font-family: Avenir;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1024px) {
+  #top-snap-button-2 {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #top-snap-button-2 {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 420px) {
+  #top-snap-button-2 {
+    margin-top: 24px;
+    font-size: 12px;
   }
 }
 
