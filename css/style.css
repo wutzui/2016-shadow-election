@@ -278,7 +278,9 @@ select:focus, textarea:focus, input:focus {
 }
 
 .stats {
-  font-size: 55px;
+  font-size: 60px;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 #polls {
@@ -297,30 +299,14 @@ select:focus, textarea:focus, input:focus {
 }
 @media screen and (max-width: 768px) {
   .chart-inline {
-    margin: 0 80px;
+    padding: 25px;
+    margin: 0 100px;
   }
 }
 @media screen and (max-width: 420px) {
   .chart-inline {
-    margin: 0 20px;
-  }
-}
-
-canvas {
-  width: 180px;
-  height: 180px;
-  background-color: black;
-}
-@media screen and (max-width: 768px) {
-  canvas {
-    width: 240px;
-    height: 240px;
-  }
-}
-@media screen and (max-width: 420px) {
-  canvas {
-    width: 180px;
-    height: 180px;
+    padding: 0;
+    margin: 0 40px;
   }
 }
 
