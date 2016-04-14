@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Shadow Election Test 1</title>
+	<title>2016 Shadow Election</title>
 	<!--import css files: bootstrap,jquery-ui, style-->
   <link rel="stylesheet" type="text/css" rel="stylesheet" media="screen" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui-1.10.2.custom.min.css">
@@ -17,17 +17,37 @@
 
 </head>
 <body>
-  <center>
   <header>
-    <img src="assets/nav.png" id= "nav">
+<!--     <img src="assets/nav.png" id= "nav"> -->
     <div class="title"><h1>SHADOW ELECTION</h1></div>
     <h3 id="pitch"> Shadow Elections is a collaboration between graduate students from NYU Studio 20 and Parsons School of Art, Media and Technology, and Fusion, a media company striving to listen to and elevate the voices of those who too often aren't heard.</h3>
-    <a href=".container" class="btn btn-primary btn-xl page-scroll" id="top-snap-button">GO TO RESULT DATABASE</a>
-    <span id="snap-buttons"> </span>
-    <a href=".pollinfo" class="btn btn-primary btn-xl page-scroll" id="top-snap-button-2">GO TO POLL INFORMATION</a>
-    
-  </header>
-  </center>
+    <div id="snap-buttons"> 
+      <a href=".container" class="btn btn-primary btn-xl page-scroll" id="top-snap-button">GO TO RESULT DATABASE</a>
+      <a href=".pollinfo" class="btn btn-primary btn-xl page-scroll" id="top-snap-button-2">GO TO POLL INFORMATION</a>
+    </div>
+    </header>
+
+  <div class="pollinfo">
+    <h3>THE NUMBERS</h3>
+    <span data-count-from="100" data-count-to="297" class="stats">000</span><br>
+    <p>RESPONSES</p><br><br>    
+    <div id="polls">
+      <div class="chart-inline">  
+        <canvas id="myChart"></canvas>   
+        <p>VOTE</p>
+      </div>
+      <div class="chart-inline">      
+        <canvas id="myChartVote"></canvas>   
+        <p>GENDER</p>  
+      </div >
+      <div class="chart-inline"> 
+        <canvas id="myChartStatus"></canvas>
+        <p>STATUS</p>
+      </div> <br><br>  
+      <a href="http://goo.gl/forms/x6zBY7tE0A" class="btn" target="_blank">Take the Poll Here</a>
+    </div>
+  </div>
+
 
 	<div class="container">
 
@@ -88,6 +108,7 @@
         <!--checkboxes:vote-->     
         <fieldset id="vote_criteria">
           <legend>V O T E</legend>
+          <center><!--buttons position center-->
             <div class="round round-clinton">
               <label>
                 <input type="checkbox" value="Hilary Clinton">
@@ -112,7 +133,8 @@
               <label>
                 <input type="checkbox" value="Donald Trump">
               </label>
-            </div>           
+            </div>
+          </center>           
         </fieldset>
   
         <!--fieldset: age slider-->

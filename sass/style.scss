@@ -2,13 +2,18 @@
 @import 'variables';
 @import 'grid';
 
+$blue: #00299B;
+$red: #CE0000;
+$pollinfo-color: #F3F5FF;
+$body-text-color: #4A174F;
+
 // =================================================================================
 // Body
 // =================================================================================
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #4A174F;
+  color: $body-text-color;
   margin: 0;
   padding: 0;
   max-width: $width-1280;
@@ -19,10 +24,17 @@ body {
 // =================================================================================
 
 header {
-   max-width: 1280px;
-   width: 100%;
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
    left: 0;
-   @media screen and (max-width: $width-1024) {
+   background: red; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(left top, $blue , $red); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(bottom right, $blue , $red); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(bottom right, $blue , $red); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(to bottom right, $blue , $red); /* Standard syntax */   
+   @media screen and (min-width: $width-1024) {
 
    }
    @media screen and (max-width: $width-ipad) {
@@ -35,7 +47,7 @@ header {
 
 .title {
    position: absolute;
-   margin-top: -20 * $leading;
+   margin-top: 5 * $leading;
    left: auto;
    right: auto;    
    letter-spacing: 1px;
@@ -43,13 +55,13 @@ header {
    text-align: center;
    width: 100vw;    
    @media screen and (max-width: $width-1024) {
-      margin-top: -21 * $leading;    
+      margin-top: 5 * $leading;    
    }
    @media screen and (max-width: $width-ipad) {
-      margin-top: -24 * $leading;      
+      margin-top: 3 * $leading;      
    }  
    @media screen and (max-width: $width-phone) {
-      margin-top: -26 * $leading;            
+      margin-top: 3 * $leading;            
    }
 
 }
@@ -57,102 +69,85 @@ header {
 .title h1 {
    color: white;
    font-weight: 500;
-   font-size: 48px;  
+   font-size: 5.5rem;  
    letter-spacing: 10px;
    @media screen and (max-width: $width-1024) {
-
+      font-size: 5rem;
    }
    @media screen and (max-width: $width-ipad) {
-      font-size: 43px;      
+      font-size: 5rem;      
    }  
    @media screen and (max-width: $width-phone) {
-           
+      font-size: 4rem;           
    }   
 }
 
-#nav {
-   top: 0;
-   left: 0;
-   max-width: 1280px;
-   width: 100vw;
-   height: 100vh;   
-   @media screen and (max-width: $width-1024) {
-      height: 100vh;
-   }
-   @media screen and (max-width: $width-ipad) {
-      height: 100vh;
-   }
-   @media screen and (max-width: $width-phone) {
-      height: 100vh;
-   }
-}
-
 #pitch {
-   margin-top: -15 * $leading;
+   margin-top: 10 * $leading;
    margin-left: auto;
    margin-right: auto;
    padding-left: 5vw;
    padding-right: 5vw;       
    letter-spacing: 1px;
    color: white;   
-   font-size: 20px;
+   font-size: 2rem;
+   font-weight: 300;   
    text-align: center;
    line-height: 40px;
    width: 85vw;
    @media screen and (max-width: $width-1024) {   
-      margin-top: -16 * $leading;
-      font-size: 18px;
+      margin-top: 10 * $leading;
+      font-size: 1.9rem;
       line-height: 35px;        
    }
    @media screen and (max-width: $width-ipad) {        
-      margin-top: -18 * $leading;
-      font-size: 16px;
+      margin-top: 9.5 * $leading;
+      font-size: 1.6rem;
       line-height: 30px;      
    }  
    @media screen and (max-width: $width-phone) {
-      margin-top: -20 * $leading;
-      font-size: 15px;
+      margin-top: 9 * $leading;
+      font-size: 1.5rem;
       line-height: 30px;
    }
 }
 
-#top-snap-button {
-   margin-top: 2 * $leading;
+#snap-buttons {
    margin-left: auto;
-   margin-right: auto;
+   margin-right: auto;  
+   display: inline-block;
+   padding: 2.5 * $leading;
+   @media screen and (max-width: $width-1024) {
+   }
+   @media screen and (max-width: $width-ipad) {  
+      display: block;
+      padding: 0.5 * $leading;    
+   }
+   @media screen and (max-width: $width-phone) {
+      padding: 0.5 * $leading;    
+   }         
+}
+
+#top-snap-button {
+   margin-right: 0.5 * $leading;
    background-color: none;
    border: 2px solid white;
    font-family: Avenir;
    letter-spacing: 2px;
    @media screen and (max-width: $width-1024) {
-      margin-top: 2 * $leading;
+      margin-right: 0.5 * $leading;
    }
    @media screen and (max-width: $width-ipad) {
-      margin-top: 1 * $leading;
+      margin: 0.5 * $leading;
    }
    @media screen and (max-width: $width-phone) {
-      margin-top: 1 * $leading;
+      margin: 0.5 * $leading;
       font-size: 12px;
    }   
 }
 
-#snap-buttons {
-   padding: 20px;
-   @media screen and (max-width: $width-1024) {
-
-   }
-   @media screen and (max-width: $width-ipad) {
-      padding-right: 0;   
-   }
-   @media screen and (max-width: $width-phone) {
-      padding: 0;
-   }         
-}
-
 #top-snap-button-2 {
-   margin-top: 2 * $leading;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 0.5 * $leading;
    padding-left: 25px;
    padding-right: 25px;   
    background-color: none;
@@ -160,13 +155,13 @@ header {
    font-family: Avenir;
    letter-spacing: 2px;
    @media screen and (max-width: $width-1024) {
-      margin-top: 2 * $leading;
+      margin-left: 0.5 * $leading;
    }
    @media screen and (max-width: $width-ipad) {
-      margin-top: 1 * $leading;
+      margin: 0.5 * $leading;
    }
    @media screen and (max-width: $width-phone) {
-      margin-top: 1 * $leading;
+      margin: 0.5 * $leading;
       font-size: 12px;
    }      
 }
@@ -200,16 +195,114 @@ select:focus, textarea:focus, input:focus {
 }  
 
 // =================================================================================
+// Pollinfo
+// =================================================================================
+
+.pollinfo {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 660px;
+  left: 0;
+  z-index: -2;  
+  text-align: center;
+  background-color: $pollinfo-color;
+  @media screen and (max-width: $width-1024) {
+
+  }
+  @media screen and (max-width: $width-ipad) {
+      height: 1280px;
+  }
+  @media screen and (max-width: $width-phone) {
+      height: 1150px;
+  }     
+
+}
+
+.pollinfo h3 {
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 50px;
+  margin: 30px;
+}
+
+.stats {
+  font-size: 55px;
+}
+
+#polls {
+  margin: 0 auto;
+  width: 100vw;  
+}
+
+.chart-inline {
+  margin: 0 80px;
+  display: inline-block;
+  @media screen and (max-width: $width-1024) {
+      margin: 0 30px;       
+  }
+  @media screen and (max-width: $width-ipad) {
+      margin: 0 80px;   
+  }
+  @media screen and (max-width: $width-phone) {
+      margin: 0 20px;   
+  }       
+}
+
+canvas {
+  width: 180px;
+  height: 180px;
+  background-color:black;
+  @media screen and (max-width: $width-1024) {
+   
+  }
+  @media screen and (max-width: $width-ipad) {
+      width: 240px;
+      height: 240px; 
+  }
+  @media screen and (max-width: $width-phone) {
+      width: 180px;
+      height: 180px;
+  }         
+}
+
+#polls a {
+  color: #490A3D;
+  letter-spacing: 1px;
+  border: 2px solid #490A3D;
+  text-transform: uppercase;
+  padding: 8px;
+  -o-transition:.7s;
+  -ms-transition:.7s;
+  -moz-transition:.7s;
+  -webkit-transition:.7s;
+  transition:.7s;
+}
+
+#polls a:hover {
+  background-color: #490A3D;
+  color: white;
+}
+
+// =================================================================================
 // Container
 // =================================================================================
 
 .container {
-  margin:0 auto;
-  margin-top: 50px;
-  top: 11 * $leading;
-  position: relative;
-  height: 1000px;
-  width: 1200px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 1320px;
+  left: 0;
+  @media screen and (max-width: $width-1024) {
+
+  }
+  @media screen and (max-width: $width-ipad) {
+      top: 1940px;
+  }
+  @media screen and (max-width: $width-phone) {
+      top: 1810px;
+  }       
 }
 
 // =================================================================================
@@ -217,7 +310,7 @@ select:focus, textarea:focus, input:focus {
 // =================================================================================
 
 .sidebar {
-  top: 0;
+  top: 50px;
   left: 0;
   bottom: 0;
   overflow-y: auto;
@@ -233,13 +326,6 @@ select:focus, textarea:focus, input:focus {
   background-color: #FFF;
   -webkit-box-shadow: none; 
   box-shadow: none;
-}
-
-.sidebar h4{
-  padding-left: 0px;
-  padding-bottom: 0px;
-  font-size: 25px;
-  text-align: center;
 }
 
 .sidebar legend{
@@ -260,25 +346,43 @@ fieldset{
 }
 
 // =================================================================================
-// Sidebar: voice
+// row: voice
 // =================================================================================
 
-.voice{
+.col-md-9{
+  top: 50px;
   margin-bottom: 20px;
   padding-right: 5px;
+  @media screen and (max-width: 990px) {
+      top: 80px;
+  }
+
 }
 
-.voice h4{
+#voice h4{
   margin-top: 15px;
   margin-bottom: -5px;
   border-bottom: 1px solid #A9A9A9;
   padding-bottom: 7px;
-  letter-spacing: 4px; // not working
+  letter-spacing: 2px; // not working
+  text-align: center;
 }
+
+// =================================================================================
+// Sidebar: voice
+// =================================================================================
 
 #total_voices{
   font-size: 25px;
-  font-weight: 700; 
+  font-weight: 700;   
+}
+
+.sidebar h4{  // word of voice
+  padding-left: 0px;
+  padding-bottom: 0px;
+  font-size: 25px;
+  letter-spacing: 2px;  
+  text-align: center;
 }
 
 // =================================================================================

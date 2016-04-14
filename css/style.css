@@ -55,14 +55,26 @@ body {
 }
 
 header {
-  max-width: 1280px;
-  width: 100%;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
   left: 0;
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #00299B, #CE0000);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #00299B, #CE0000);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #00299B, #CE0000);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #00299B, #CE0000);
+  /* Standard syntax */
 }
 
 .title {
   position: absolute;
-  margin-top: -480px;
+  margin-top: 120px;
   left: auto;
   right: auto;
   letter-spacing: 1px;
@@ -72,94 +84,98 @@ header {
 }
 @media screen and (max-width: 1024px) {
   .title {
-    margin-top: -504px;
+    margin-top: 120px;
   }
 }
 @media screen and (max-width: 768px) {
   .title {
-    margin-top: -576px;
+    margin-top: 72px;
   }
 }
 @media screen and (max-width: 420px) {
   .title {
-    margin-top: -624px;
+    margin-top: 72px;
   }
 }
 
 .title h1 {
   color: white;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 5.5rem;
   letter-spacing: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .title h1 {
+    font-size: 5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .title h1 {
-    font-size: 43px;
-  }
-}
-
-#nav {
-  top: 0;
-  left: 0;
-  max-width: 1280px;
-  width: 100vw;
-  height: 100vh;
-}
-@media screen and (max-width: 1024px) {
-  #nav {
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  #nav {
-    height: 100vh;
+    font-size: 5rem;
   }
 }
 @media screen and (max-width: 420px) {
-  #nav {
-    height: 100vh;
+  .title h1 {
+    font-size: 4rem;
   }
 }
 
 #pitch {
-  margin-top: -360px;
+  margin-top: 240px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5vw;
   padding-right: 5vw;
   letter-spacing: 1px;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 300;
   text-align: center;
   line-height: 40px;
   width: 85vw;
 }
 @media screen and (max-width: 1024px) {
   #pitch {
-    margin-top: -384px;
-    font-size: 18px;
+    margin-top: 240px;
+    font-size: 1.9rem;
     line-height: 35px;
   }
 }
 @media screen and (max-width: 768px) {
   #pitch {
-    margin-top: -432px;
-    font-size: 16px;
+    margin-top: 228px;
+    font-size: 1.6rem;
     line-height: 30px;
   }
 }
 @media screen and (max-width: 420px) {
   #pitch {
-    margin-top: -480px;
-    font-size: 15px;
+    margin-top: 216px;
+    font-size: 1.5rem;
     line-height: 30px;
   }
 }
 
-#top-snap-button {
-  margin-top: 48px;
+#snap-buttons {
   margin-left: auto;
   margin-right: auto;
+  display: inline-block;
+  padding: 60px;
+}
+@media screen and (max-width: 768px) {
+  #snap-buttons {
+    display: block;
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 420px) {
+  #snap-buttons {
+    padding: 12px;
+  }
+}
+
+#top-snap-button {
+  margin-right: 12px;
   background-color: none;
   border: 2px solid white;
   font-family: Avenir;
@@ -167,39 +183,23 @@ header {
 }
 @media screen and (max-width: 1024px) {
   #top-snap-button {
-    margin-top: 48px;
+    margin-right: 12px;
   }
 }
 @media screen and (max-width: 768px) {
   #top-snap-button {
-    margin-top: 24px;
+    margin: 12px;
   }
 }
 @media screen and (max-width: 420px) {
   #top-snap-button {
-    margin-top: 24px;
+    margin: 12px;
     font-size: 12px;
   }
 }
 
-#snap-buttons {
-  padding: 20px;
-}
-@media screen and (max-width: 768px) {
-  #snap-buttons {
-    padding-right: 0;
-  }
-}
-@media screen and (max-width: 420px) {
-  #snap-buttons {
-    padding: 0;
-  }
-}
-
 #top-snap-button-2 {
-  margin-top: 48px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 12px;
   padding-left: 25px;
   padding-right: 25px;
   background-color: none;
@@ -209,17 +209,17 @@ header {
 }
 @media screen and (max-width: 1024px) {
   #top-snap-button-2 {
-    margin-top: 48px;
+    margin-left: 12px;
   }
 }
 @media screen and (max-width: 768px) {
   #top-snap-button-2 {
-    margin-top: 24px;
+    margin: 12px;
   }
 }
 @media screen and (max-width: 420px) {
   #top-snap-button-2 {
-    margin-top: 24px;
+    margin: 12px;
     font-size: 12px;
   }
 }
@@ -249,17 +249,119 @@ select:focus, textarea:focus, input:focus {
   border-color: #CCC !important;
 }
 
-.container {
+.pollinfo {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 660px;
+  left: 0;
+  z-index: -2;
+  text-align: center;
+  background-color: #F3F5FF;
+}
+@media screen and (max-width: 768px) {
+  .pollinfo {
+    height: 1280px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pollinfo {
+    height: 1150px;
+  }
+}
+
+.pollinfo h3 {
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 50px;
+  margin: 30px;
+}
+
+.stats {
+  font-size: 55px;
+}
+
+#polls {
   margin: 0 auto;
-  margin-top: 50px;
-  top: 264px;
-  position: relative;
-  height: 1000px;
-  width: 1200px;
+  width: 100vw;
+}
+
+.chart-inline {
+  margin: 0 80px;
+  display: inline-block;
+}
+@media screen and (max-width: 1024px) {
+  .chart-inline {
+    margin: 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chart-inline {
+    margin: 0 80px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .chart-inline {
+    margin: 0 20px;
+  }
+}
+
+canvas {
+  width: 180px;
+  height: 180px;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  canvas {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 420px) {
+  canvas {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+#polls a {
+  color: #490A3D;
+  letter-spacing: 1px;
+  border: 2px solid #490A3D;
+  text-transform: uppercase;
+  padding: 8px;
+  -o-transition: .7s;
+  -ms-transition: .7s;
+  -moz-transition: .7s;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+#polls a:hover {
+  background-color: #490A3D;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 1320px;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    top: 1940px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    top: 1810px;
+  }
 }
 
 .sidebar {
-  top: 0;
+  top: 50px;
   left: 0;
   bottom: 0;
   overflow-y: auto;
@@ -275,13 +377,6 @@ select:focus, textarea:focus, input:focus {
   background-color: #FFF;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-.sidebar h4 {
-  padding-left: 0px;
-  padding-bottom: 0px;
-  font-size: 25px;
-  text-align: center;
 }
 
 .sidebar legend {
@@ -301,22 +396,37 @@ fieldset {
   padding-bottom: 20px;
 }
 
-.voice {
+.col-md-9 {
+  top: 50px;
   margin-bottom: 20px;
   padding-right: 5px;
 }
+@media screen and (max-width: 990px) {
+  .col-md-9 {
+    top: 80px;
+  }
+}
 
-.voice h4 {
+#voice h4 {
   margin-top: 15px;
   margin-bottom: -5px;
   border-bottom: 1px solid #A9A9A9;
   padding-bottom: 7px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 #total_voices {
   font-size: 25px;
   font-weight: 700;
+}
+
+.sidebar h4 {
+  padding-left: 0px;
+  padding-bottom: 0px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 #status_criteria {
