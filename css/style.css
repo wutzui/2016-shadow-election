@@ -396,7 +396,7 @@ fieldset {
 #voice h4 {
   margin-top: 15px;
   margin-bottom: -5px;
-  border-bottom: 1px solid #A9A9A9;
+  border-bottom: 0px;
   padding-bottom: 7px;
   letter-spacing: 2px;
   text-align: center;
@@ -574,11 +574,11 @@ fieldset {
   transition: all 0.25s ease-in 0s;
 }
 
-.caption:hover .description {
+.thumbnail:hover .description {
   opacity: 1;
 }
 
-.caption:hover .detail {
+.thumbnail:hover .detail {
   opacity: 0;
 }
 

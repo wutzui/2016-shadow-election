@@ -107,5 +107,60 @@ var voices = [
     ],
     "news": "Yes",
     "description": "A lot of people consider Hillary Clinton a bad choice because she’s taking all that money from Wall Street. But at the same time, when it comes down to it, she would be able to surround herself with the smartest and best people. Looking back Bill Clinton was one of the best presidents of the US of the past 50 years. I can’t see her being much different. Obama has done a great job as well and she would be the closest and most continuation from him without major change.",
+  },
+   {
+    "id": 7,
+    "img": "img/MichaelTorres.png",
+    "name": "Michael Torres",
+    "country": "From USA, living in Guam",
+    "age": 59,
+    "gender": "Male",
+    "group": "US Territory Residents",
+    "vote": "Bernie Sanders",
+    "issue": [
+      "Gun Safety",
+      "Economic Equality",
+      "Tax Reform",
+      "Criminal Justice Reform",
+      "Health Care",
+      "Voting Representation in congress and senate"
+    ],
+    "news": "Yes",
+    "description": "I am tired of being a second hand citizen. I am tired of living in a place that is mandated to adhere to laws and regulations that cost Guam money, but are unfunded or inadequately funded. I want Independence for Guam. It is the only way that we will ever be treated properly by the US. The US have gotten down way too far a right-wing track - including the democrats. This neo-liberalism is nothing but republican light. Hillary Clinton is owned and operated by the big banks and big pharma. She is never going to do anything except incremental changes, which is meaningless. For the past 40 years the middle class has been disappearing. And none of the Democrats have done anything about it, except Bernie.",
+  },
+  {
+    "id": 8,
+    "img": "img/eddieHeins.png",
+    "name": "Eddie Heins",
+    "country": "From USA, living in Northern Marina Islands",
+    "age": 59,
+    "gender": "Male",
+    "group": "US Territory Residents",
+    "vote": "Donald Trump",
+    "issue": [
+      "Economic Equality",
+      "Tax Reform"
+    ],
+    "news": "Yes",
+    "description": "When I moved to Saipan form South Carolina in 2003 I registered to vote in the local elections. That made me legal to vote in Saipan but not anywhere else. To be honest, as I don’t pay US taxes, why would I have a right to vote on the US mainland? I don’t use anything in the mainland, why should I pay taxes? I would vote for anyone but Hillary. I wouldn’t vote for her if she was the last person on earth. If it happens to be Trump, it’ll be Trump. If it happens to be Cruz - I really despise Cruz, but I despise Hillary more. If Bernie Sanders happened to beat Hillary, then I would have to take a good look at him.",
+  },
+   {
+    "id": 9,
+    "img": "img/EstephaniaMaupome.png",
+    "name": "Estephania Maupome",
+    "country": "From Mexico, living in USA for 11 years",
+    "age": 24,
+    "gender": "Female",
+    "group": "Undocumented Residents",
+    "vote": "Bernie Sanders",
+    "issue": [
+
+      "Immigration Reform",
+      "Tuition in College"
+    ],
+    "news": "Yes",
+    "description": "I love politics. I like to get involved into something that’s gonna affect not only my life but the future generations. Why can’t I still put my opinion and my voice into the country that I live in? It’s frustrating. I want truth and honesty from the candidates. I don’t want them to tell me they’ll give me free things. I want to see the strategy how to make things change. When I see Trump I feel offended and embarrassed as an American. It’s not only Americans watching him but the entire world. Hillary Clinton is more about the big banks. I wish a woman got elected. But not if it’s so crooked and dishonest. I would vote for Bernie Sanders.",
+
   }
+
 ]

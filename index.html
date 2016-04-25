@@ -60,7 +60,7 @@
     <!--sidebar filters-->
 	  <div class="sidebar col-md-3">
 	    <div>
-          <h4><span id="total_voices">5 </span> VOICES</h4>
+          <h4><span id="total_voices">9 </span> VOICES</h4>
       </div>	
 
       <div class="well">
@@ -75,14 +75,14 @@
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="Foreign Workers">
-                <span>Foreign Workers</span>
+                <input type="checkbox" value="International Workers">
+                <span>International Workers</span>
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="Convicted Felons">
-                <span>Convicted Felons</span>
+                <input type="checkbox" value="Disenfranchised Felons">
+                <span>Disenfranchised Felons</span>
               </label>
             </div>
             <div class="checkbox">
@@ -192,18 +192,18 @@
             <div class="caption">
         			<h4><%= name %></h4>
        				<div class="description">
-                  <p class="vote">Vote for  <span><%= vote %></span></p>        			
+                  <center><p class="vote">Would vote for  <br><span><b><%= vote %></b></span></p></center>        			
                   <%= description %><br>
         			</div>
         			<div class="detail">
-          		  	<dl>
-           		   		<dt></dt>
-            	    	<dd><%= country %></dd>
-                    <dt></dt>
-                    <dd><%= age %></dt>
-               	    <dt></dt>
-                    <dd><%= group %></dd>
-                  </dl>
+          		
+           		
+            	    	<span><%= country %> </span>
+  
+                    <span><%= age %> </span>
+               	
+                    <span><%= group %></span>
+  
             	</div>
             </div>
         </div>
