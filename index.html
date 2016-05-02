@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>2016 Shadow Elections</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -260,39 +260,46 @@
 
     <section id="about-modal">
         <img src="assets/close-icon.png" id="close-btn">
-        <center><h2 class="section-heading">ABOUT</h2></center>
+        <center>
+            <h1 class="section-heading">ABOUT US</h1>
+            <hr class="light" style="border-color: #4A174F">
+        </center>
 
-            <div class="row" style="margin-top: 15vh">
+            <div style="margin: 12vh 5vw">
+                <div class="col-lg-3 col-md-6 text-center">
+                        <img src="assets/my-profile2.jpg" id="profile-img">
+                        <h3>Kim</h3>
+                        <p>Project management & editorial</p>
+                </div>
                 <div class="col-lg-3 col-md-6 text-center">
                         <img src="assets/my-profile4.jpg" id="profile-img">
-                        <h2>NAME1</h2>
+                        <h3>LINNEA</h3>
+                        <p>Design & editorial</p>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                         <img src="assets/my-profile3.jpg" id="profile-img">
-                        <h2>NAME2</h2>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                        <img src="assets/my-profile2.jpg" id="profile-img">
-                        <h2>NAME3</h2>
+                        <h3>RAHA</h3>
+                        <p>Web development & UX</p>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                         <img src="assets/my-profile.jpg" id="profile-img">
-                        <h2>NAME4</h2>
+                        <h3>YIZZY</h3>
+                        <p>Web development & UX</p>
                 </div>
             </div>
     </section>
 
     <!--voice template/data goes in row-->
     <script id="voice-template" type="text/html">
-<!--         <div class="popup"><%= description %></div> -->
+        <div class="popup"><%= description %></div>
         <div class="col-md-4 voice">
             <div class="thumbnail">
                 <img class="img-responsive" src="<%= img %>" alt="voice-img">
                 <div class="caption">
                     <h4><%= name %></h4>
-                    <div class="description" style="margin: 0 auto">
-                        <p class="vote" style="text-align: center">Would vote for  <br><span><b><%= vote %></b></span></p>                  
-                    </div>
+                    <center><div class="description">
+                        <p class="vote">Would vote for  <br><span><b><%= vote %></b></span></p>                  
+                    </div></center>
                     <div class="detail">
                         <span><%= country %> </span>
                         <span><%= age %> </span>
