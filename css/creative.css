@@ -671,9 +671,8 @@ legend {
 
 .thumbnail{
   /* background-color: #EEE; */
-  min-height: 265px;
+  min-height: 100%;
   border-radius: 0;
-  min-height: 300px;
   border: none;
 }
 
@@ -717,14 +716,13 @@ legend {
   margin-bottom: 0px;
   font-weight: 200;
   color: #4A174F;
-  @include transition;    
 }
 
-.caption:hover .description{
+.thumbnail:hover .description{
   opacity: 0;
 }
 
-.caption:hover .detail{
+.thumbnail:hover .detail{
   opacity: 1;
 }
 
