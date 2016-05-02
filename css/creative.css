@@ -716,8 +716,7 @@ legend {
   padding: 5px 15px;
   margin-bottom: 0px;
   font-weight: 200;
-  color: #4A174F;
-  @include transition;    
+  color: #4A174F;    
 }
 
 .caption:hover .description{

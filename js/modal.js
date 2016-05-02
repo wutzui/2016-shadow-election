@@ -39,10 +39,10 @@ $("document").ready(function(){
 
     /******************************************************************************/
 
-    $('.popup').click(function(){
-        var $descript = $(this);
-        $descript.animate({
-        opacity:($descript.css('opacity')== 0) ? 1 : 0});
-    })      
+    // $('.popup').click(function(){
+    //     var $descript = $(this);
+    //     $descript.animate({
+    //     opacity:($descript.css('opacity')== 0) ? 1 : 0});
+    // })      
 
 });

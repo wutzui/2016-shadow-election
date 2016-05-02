@@ -284,15 +284,15 @@
 
     <!--voice template/data goes in row-->
     <script id="voice-template" type="text/html">
-        <div class="popup"><%= description %></div>
+<!--         <div class="popup"><%= description %></div> -->
         <div class="col-md-4 voice">
             <div class="thumbnail">
                 <img class="img-responsive" src="<%= img %>" alt="voice-img">
                 <div class="caption">
                     <h4><%= name %></h4>
-                    <center><div class="description">
-                        <p class="vote">Would vote for  <br><span><b><%= vote %></b></span></p>                  
-                    </div></center>
+                    <div class="description" style="margin: 0 auto">
+                        <p class="vote" style="text-align: center">Would vote for  <br><span><b><%= vote %></b></span></p>                  
+                    </div>
                     <div class="detail">
                         <span><%= country %> </span>
                         <span><%= age %> </span>
