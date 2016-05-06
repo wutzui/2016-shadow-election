@@ -540,7 +540,6 @@ legend {
   height: 45px;
 }
 
-
 /**********************************************************************/
 #gender_criteria .checkbox {
     display: inline-block;
@@ -646,9 +645,6 @@ legend {
 
 .thumbnail img{
   filter: grayscale(100%);
-  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;
 }
 
 .thumbnail img:hover{
@@ -678,7 +674,7 @@ legend {
 }
 
 #profile-img {
-    width: 15vw;
+    width: 5vw;
     border-radius: 100%;
     filter: grayscale(100%);
 }
@@ -710,5 +706,74 @@ legend {
     top: 50px;
     z-index: 999;
 }
+
+/**********************************************************************/
+/*num-content*/
+.num-content {
+  min-width: 300px; 
+  margin-bottom: 12px;
+}
+
+.num-content p {
+  font-size: 15px;
+}
+
+/**********************************************************************/
+/*staff-profile*/
+.staff-profile {
+  margin-right: 0;
+  padding-top: 0;
+  padding-left: 30px;
+  padding-right: 0;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #4A174F;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  width: 310px;
+  min-height: 300px;
+}
+
+.profile {
+  min-width: 150px;
+  height: 60px;
+  margin-bottom: 18px;
+  padding: 0;
+}
+
+.p-img {
+  position: relative;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.p-text {
+  width: 190px;
+  position: relative;
+  z-index: 5;
+  top: -60px;
+  left: 80px;
+}
+
+.p-img img {
+  top: 0;
+  width: 60px;
+  border-radius: 100%;
+  vertical-align: initial;
+  margin: 0;
+}
+
+.p-text h4 {
+  font-size: 16px;
+  line-height: 5px;
+}
+
+.p-text span {
+  font-size: 12px;
+}
+
+
 
 
