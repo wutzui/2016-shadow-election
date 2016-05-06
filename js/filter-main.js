@@ -21,23 +21,7 @@ $(document).ready(function(){
       }
     }
     //appendToContainer: appendToContainer
-  });
-
-  FJS.addCallback('beforeAddRecords', function(){
-    if(this.recordsCount >= 450){
-      this.stopStreaming();
-    }
-  });
-
-  FJS.addCallback('afterAddRecords', function(){
-    var percent = (this.recordsCount - 250)*100/250;
-
-    $('#stream_progress').text(percent + '%').attr('style', 'width: '+ percent +'%;');
-
-    if (percent == 100){
-      $('#stream_progress').parent().fadeOut(1000);
-    }
-  });
+  }); 
 
   // FJS.addCriteria({field: 'year', ele: '#year_filter', type: 'range', all: 'all'}); --> this is for drop down options
   FJS.addCriteria({field: 'age', ele: '#age_filter', type: 'range'});
@@ -87,7 +71,7 @@ $(document).ready(function(){
     var $voteChecked = $(this);
     $voteChecked.animate({
     opacity:($voteChecked.css('opacity')== 0.5) ? 1 : 0.5});
-  })   
+  })
 
 
 });

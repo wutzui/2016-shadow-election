@@ -131,7 +131,8 @@
     <section class="no-padding" id="voice-content">
     
     <!--sidebar filters-->
-    <div class="sidebar bg-primary col-md-3" style="height: 100vh">
+    <div id="sticky-anchor"></div>
+    <div class="sidebar bg-primary col-md-3" id="sidebar" style="height: 100vh">
         <div>
            <h4><span id="total_voices"> 9 </span> VOICES</h4>
         </div>    
@@ -251,13 +252,20 @@
         </fieldset>
     </div><!--end div of sidebar!!!-->
 
-    <!--row content-->
-    <div class="col-md-9 row">
-        <div class="voice-content-row" id="voice" fjs-items="template=#voice-template"></div>
-    </div>
-
+    <!--quote content: popup-->
+<!--     <div class="col-md-1">
+        <div class="quote-content-row" id="voice-quote" fjs-items="template=#quote-template"></div>
+    </div>     -->
     </section>
+    <section id="row-content" >
+        <div class="col-md-3" style="height: 100vh; z-index: 500"></div>
+        <!--row content-->
+        <div class="col-md-9 row">
+            <div class="voice-content-row" id="voice" fjs-items="template=#voice-template"></div>
+        </div>
+    </section> 
 
+    <!--about modal content-->
     <section id="about-modal">
         <img src="assets/close-icon.png" id="close-btn">
         <center>
@@ -308,6 +316,13 @@
             </div>
         </div>
     </script>
+
+    <!--quote template/data goes in the popup-->
+<!--     <script id="quote-template" type="text/html">
+        <div class="quote">
+            <div class="quote-content" id="quote"><p><%= description %><p></div>
+        </div>
+    </script>     -->
 
     <!--get status/group data-->
     <script id="status_template" type="text/html">
