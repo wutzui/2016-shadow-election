@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">2016 Shadow Elections</a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="letter-spacing: 1px">2016 Shadow Elections</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,19 +77,20 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>SHADOW ELECTIONS</h1>
+                <h1 style="letter-spacing: 4px">SHADOW ELECTIONS</h1>
                 <hr>
                 <p>Shadow Elections is a collaboration between graduate students from NYU Studio 20 and Parsons School of Art, Media and Technology, and Fusion, a media company striving to listen to and elevate the voices of those who too often aren't heard.</p>
                 <a href="#pollInfo" class="btn btn-primary btn-xl page-scroll">GO TO POLL INFORMATION</a>
+                <a href="#voice-content" class="btn btn-primary btn-xl page-scroll">DATA RESULT</a>
             </div>
         </div>
     </header>
 
-    <section id="pollInfo" style="background-color: #F3F5FF"> <!--class="bg-primary"-->
+    <section id="pollInfo" style="background-color: #F3F5FF; padding-top: 40px;"> <!--class="bg-primary"-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">THE NUMBERS</h2>
+                    <h2 class="section-heading" style="font-weight: 600; letter-spacing: 1px;">THE NUMBERS</h2>
 <!--                     <hr class="light" style="border-color: #4A174F"> -->
                     <p data-count-from="100" data-count-to="297" class="stats">000</p>
                     <p>RESPONSES</p><br><br> 
@@ -133,14 +134,14 @@
     <!--sidebar filters-->
     <div id="sticky-anchor"></div>
     <div class="sidebar bg-primary col-md-3" id="sidebar" style="height: 100vh">
-        <div>
-           <h4><span id="total_voices"> 9 </span> VOICES</h4>
+        <div class="total-container">
+           <h4><span id="total_voices">9</span> VOICES</h4>
         </div>    
 
         <!--checkboxes:status--> 
-        <hr class="light" style="margin-top: 20px; margin-left: 0; margin-bottom: 10px;">   
+        <hr class="light" style="margin-top: 10px; margin-left: 0; margin-bottom: 5px;">   
         <fieldset id="status_criteria">
-          <legend>S T A T U S</legend>
+          <legend style="font-weight: 700">STATUS</legend>
             <div class="checkbox">
               <label>
                 <input type="checkbox" value="International Students">
@@ -186,9 +187,9 @@
         </fieldset> 
 
         <!--checkboxes:vote-->
-        <hr class="light" style="margin-top: 10px; margin-left: 0; margin-bottom: 10px;">       
+        <hr class="light" style="margin-top: 10px; margin-left: 0; margin-bottom: 5px;">       
         <fieldset id="vote_criteria">
-          <legend style="margin-bottom: 10px">V O T E</legend>
+          <legend style="margin-bottom: 10px; font-weight: 700">VOTE</legend>
           <center><!--buttons position center-->
             <div class="round round-clinton">
               <label>
@@ -219,18 +220,18 @@
         </fieldset>
   
         <!--fieldset: age slider-->
-        <hr class="light" style="margin-top: 20px; margin-left: 0; margin-bottom: 10px;"> 
+        <hr class="light" style="margin-top: 20px; margin-left: 0; margin-bottom: 5px;"> 
         <fieldset id="age_criteria">
-            <legend>A G E</legend> 
+            <legend style="font-weight: 700">AGE</legend> 
             <center><span id="age_range_label" class="slider-label">15 - 100</span>
             <div id="age_slider" class="slider"></div></center>
             <input type="hidden" id="age_filter" value="15-100" fjs-criteria="field=age,type=range">
         </fieldset><br>
     
         <!--checkboxes: gender-->
-        <hr class="light" style="margin-top: 10px; margin-left: 0; margin-bottom: 10px;">      
+        <hr class="light" style="margin-top: 10px; margin-left: 0; margin-bottom: 5px;">      
         <fieldset id="gender_criteria">
-          <legend>G E N D E R</legend>
+          <legend style="font-weight: 700">GENDER</legend>
             <div class="checkbox">
               <label>
                 <input type="checkbox" value="Male">

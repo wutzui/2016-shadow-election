@@ -21,7 +21,9 @@ hr {
 }
 
 hr.light {
-    border-color: #fff;
+    border-color: #dad0db;
+    border-width: 3px;
+    max-width: 300px;
 }
 
 a {
@@ -259,68 +261,10 @@ header .header-content .header-content-inner p {
     }
 }
 
-.pie-box p {
+.pie-box h3 {
     margin-bottom: 0;
-}
-
-.portfolio-box {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 650px;
-}
-
-.portfolio-box .portfolio-box-caption {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    opacity: 0;
-    background: rgba(240,95,64,.9);
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    transform: translateY(-50%);
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    text-transform: uppercase;
-    font-size: 14px;
     font-weight: 600;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 18px;
-}
-
-.portfolio-box:hover .portfolio-box-caption {
-    opacity: 1;
-}
-
-@media(min-width:768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
-    }
-
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
-    }
+    letter-spacing: 1px;
 }
 
 .call-to-action h2 {
@@ -392,6 +336,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
     border-color: #4A174F;
     color: #4A174F;
+    margin: 10px;
     background-color: white;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -492,6 +437,34 @@ legend {
     font-size: 20px;
     margin-bottom: 0;
     border-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.checkbox {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+ 
+/**********************************************************************/
+/*total container*/
+.total-container {
+    max-width: 50%;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: 0px;
+    margin-bottom: 0;
+}
+
+.total-container h4 {
+  letter-spacing: 2px;
+}
+
+#total_voices {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 /**********************************************************************/
@@ -500,7 +473,7 @@ legend {
   display: inline-block;
   opacity: 0.5;    
   cursor: pointer; 
-  margin-right: 5px; 
+  margin-right: 8px; 
 }
 
 /*vote-criteria: clinton round shape img*/
