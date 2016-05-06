@@ -87,17 +87,19 @@
         </div>
     </header>
 
-    <section id="pollInfo" style="background-color: #F3F5FF; padding-top: 40px;"> <!--class="bg-primary"-->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading" style="font-weight: 600; letter-spacing: 1px;">THE NUMBERS</h2>
+    <section id="pollInfo" style="background-color: #F3F5FF;"> <!--class="bg-primary"-->
+        <div>
+            <div class="row" style="margin-left: 100px;">
+                    <div class="col-md-9" style="padding-right: 0px">   
+                        <h1 style="letter-spacing: 1px;">THE NUMBERS</h1>
 <!--                     <hr class="light" style="border-color: #4A174F"> -->
-                    <p data-count-from="100" data-count-to="297" class="stats">000</p>
-                    <p>RESPONSES</p><br><br> 
-                </div>
+                    </div> 
+                    <div class="col-md-2" style="text-align: center;">
+                        <p data-count-from="100" data-count-to="297" class="stats">000</p>
+                        <p>RESPONSES</p>
+                    </div>
             </div>
-            <div class="row">
+            <div class="row" style="top: -30">
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="pie-box">
 <!--                         <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i> -->
@@ -126,7 +128,6 @@
                     <a href="http://goo.gl/forms/x6zBY7tE0A" target="_blank" class="btn btn-default btn-xl">Take the Poll Here</a>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -254,10 +255,6 @@
         </fieldset>
     </div><!--end div of sidebar!!!-->
 
-    <!--quote content: popup-->
-<!--     <div class="col-md-1">
-        <div class="quote-content-row" id="voice-quote" fjs-items="template=#quote-template"></div>
-    </div>     -->
     </section>
     <section id="row-content" >
         <div class="col-md-3" style="height: 100vh; z-index: 100"></div>
@@ -266,42 +263,6 @@
             <div class="voice-content-row" id="voice" fjs-items="template=#voice-template"></div>
         </div>
     </section> 
-
-    <!--about modal content-->
-    <section id="about-modal">
-        <img src="assets/close-icon.png" id="close-btn">
-        <center>
-            <h1 class="section-heading">ABOUT US</h1>
-            <hr class="light" style="border-color: #4A174F">
-        </center>
-
-            <div>
-                <div class="">
-                    <img src="assets/my-profile2.jpg" id="profile-img">
-                    <h4>Kim<span><br>NYU, Studio 20</span></h4>
-                </div>
-                <div>
-                    <img src="assets/my-profile3.jpg" id="profile-img">
-                    <h4>LINNEA</h4>
-                    <p>Design & editorial</p>
-                </div>
-                <div>
-                    <img src="assets/my-profile4.jpg" id="profile-img">
-                    <h4>RAHA</h4>
-                    <p>Web development & UX</p>
-                </div>
-                <div>
-                    <img src="assets/my-profile.jpg" id="profile-img">
-                    <h4>YIZZY</h4>
-                    <p>Web development & UX</p>
-                </div>
-                <div >
-                    <img src="assets/my-profile.jpg" id="profile-img">
-                    <h4>FUSION.NET</h4>
-                    <p>Web development & UX</p>
-                </div>
-            </div>
-    </section>
 
     <!--voice template/data goes in row-->
     <script id="voice-template" type="text/html">
@@ -320,12 +281,6 @@
         </div>
     </script>
 
-    <!--quote template/data goes in the popup-->
-<!--     <script id="quote-template" type="text/html">
-        <div class="quote">
-            <div class="quote-content" id="quote"><p><%= description %><p></div>
-        </div>
-    </script>     -->
 
     <!--get status/group data-->
     <script id="status_template" type="text/html">
