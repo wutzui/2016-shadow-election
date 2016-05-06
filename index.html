@@ -12,7 +12,7 @@
     <title>2016 Shadow Elections</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 
     <!-- Jquery UI CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui-1.10.2.custom.min.css">
@@ -21,6 +21,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -259,7 +260,7 @@
     </div>     -->
     </section>
     <section id="row-content" >
-        <div class="col-md-3" style="height: 100vh; z-index: 500"></div>
+        <div class="col-md-3" style="height: 100vh; z-index: 100"></div>
         <!--row content-->
         <div class="col-md-9 row">
             <div class="voice-content-row" id="voice" fjs-items="template=#voice-template"></div>
@@ -304,14 +305,11 @@
             <div class="thumbnail">
                 <img class="img-responsive" src="<%= img %>" alt="voice-img">
                 <div class="caption">
-                    <h4><%= name %></h4>
-                    <center><div class="description">
-                        <p class="vote">Would vote for  <br><span><b><%= vote %></b></span></p>                  
-                    </div></center>
                     <div class="detail">
-                        <span><%= country %> </span>
-                        <span><%= age %> </span>
-                        <span><%= group %></span>
+                        <span><%= name %>. <%= country %>, <%= age %>yrs old. <%= group %>.</span>
+<!--                     <div class="description">
+                        <p class="vote">Would vote for  <br><span><b><%= vote %></b></span></p>                  
+                    </div> -->
                     </div>
                 </div>
             </div>

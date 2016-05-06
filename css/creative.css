@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -446,7 +446,6 @@ legend {
     letter-spacing: 0.5px;
 }
 
- 
 /**********************************************************************/
 /*total container*/
 .total-container {
@@ -622,80 +621,39 @@ legend {
 
 /**********************************************************************/
 /*row*/
-
-.col-md-9{
-  top: 50px;
-  margin-bottom: 20px;
-  padding-right: 5px;
-}
-
-#voice h4{
-  margin-top: 15px;
-  margin-bottom: -5px;
-  padding-bottom: 7px;
-  letter-spacing: 2px; 
-  text-align: center;
-}
-
-.thumbnail{
-  /* background-color: #EEE; */
-  min-height: 100%;
+.thumbnail {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #4A174F;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
   border-radius: 0;
-  border: none;
+  min-height: 380px;
 }
 
-.img-responsive {
-  border-radius: 100%;
-  width: 170px;
-  margin-top: 20px;
-  border-color: blue;
-}
-
-.caption .detail{
+.detail {
   margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   color: #4A174F;
-  text-align: center;
-  opacity: 0;
-}
-
-.caption .field{
-  font-weight: bold;
-  float: left;
-  width: 65px;
-}
-
-.caption h4{
-  color: #4A174F;
-  min-height: 45px;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
-.description {
-  position: relative;
-  display: block;
-  background: rgba(255, 255, 255, .5);
-  opacity: 1;
-  font-weight: 200;
-  color: #4A174F;
+.thumbnail img{
+  filter: grayscale(100%);
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
 }
 
-.thumbnail:hover .description{
-  opacity: 0;
+.thumbnail img:hover{
+  filter: grayscale(0);
 }
-
-.thumbnail:hover .detail{
-  opacity: 1;
-}
-
-.quote-content {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  display: block;
-
-}
-
 
 /**********************************************************************/
 /*about modal*/
@@ -743,7 +701,7 @@ legend {
 /*sidebar-scroll*/
 #sidebar {
     position: absolute;
-    z-index: 100;
+    z-index: 500;
 }
 
 #sidebar.stick {
