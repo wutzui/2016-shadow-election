@@ -8,6 +8,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    color: #4A174F;
 }
 
 body {
@@ -33,6 +34,10 @@ a {
     transition: all .35s;
 }
 
+li {
+  list-style: none;
+}
+
 a:hover,
 a:focus {
     color: #805c83;
@@ -45,6 +50,7 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 p {
@@ -52,6 +58,61 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+
+.peopleinfo {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#peopleinfo1 {
+
+  color: white;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#blackLayer{
+  top: 0;
+  left:0;
+  position: fixed;
+  display: none;
+  background: black;
+  opacity: 0.5;
+  width: 100%;
+  height:100%;
+  z-index: 10;
+
+}
+
+#modal{
+  position: fixed;
+  top: 5000px;
+  margin-top: 8%;
+  margin-left: 30%;
+  margin-right: 10%;
+  padding: 25px;
+  display: none;
+  background: white;
+  font-size: 2vw;
+  font-family: "Open Sans";
+  color: #4A174F;
+  width: 60%;
+  height: 78%;
+  transition: 500ms ease-in;
+  z-index: 20;
+}
+
+.img-responsive {
+  transition: 200ms ease-in;
+}
+
+.img-responsive:hover {
+  opacity: 0.7;
+}
+
 
 .bg-primary {
     background-color: #4A174F;
@@ -620,16 +681,16 @@ legend {
 /**********************************************************************/
 /*row*/
 .thumbnail {
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 20px;
   border-style: solid;
-  border-width: 4px;
-  border-color: #4A174F;
+  border-width: 0px;
+  border-color: none;
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
   border-radius: 0;
-  min-height: 380px;
+  min-height: 390px;
 }
 
 .detail {
@@ -637,7 +698,7 @@ legend {
   margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   color: #4A174F;
   text-transform: uppercase;
 }
@@ -648,18 +709,6 @@ legend {
 
 .thumbnail img:hover{
   filter: grayscale(0);
-}
-
-/*popup description*/
-.description {
-  position: fixed;
-  z-index: 2000;
-  top: 10%;
-  margin: 0 auto;
-  width: 500px;
-  height: 200px;
-  background-color: pink;
-  display: none;
 }
 
 /**********************************************************************/
@@ -687,6 +736,13 @@ legend {
   font-size: 15px;
 }
 
+.num-content img {
+  margin-left: 10px;
+  margin-top: -3px;
+  width: 17px;
+  padding: 0;
+}
+
 /**********************************************************************/
 /*staff-profile*/
 .staff-profile {
@@ -705,11 +761,20 @@ legend {
   min-height: 300px;
 }
 
+
+
 .profile {
   min-width: 150px;
   height: 60px;
   margin-bottom: 18px;
   padding: 0;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.profile:hover {
+  opacity: 0.7;
 }
 
 .p-img {

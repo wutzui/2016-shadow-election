@@ -95,7 +95,7 @@
 <!--                     <hr class="light" style="border-color: #4A174F"> -->
                     </div> 
                     <div class="col-md-2" style="text-align: center;">
-                        <p data-count-from="000" data-count-to="339" class="stats">000</p>
+                        <p data-count-from="250" data-count-to="347" class="stats">000</p>
                         <p>RESPONSES</p>
                     </div>
             </div>
@@ -103,21 +103,21 @@
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="pie-box">
 <!--                         <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i> -->
-                        <canvas id="myChart" width="300" height="180"></canvas>
+                        <canvas id="myChart" width="200" height="180"></canvas>
                         <h3>VOTE</h3>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="pie-box">
 <!--                         <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i> -->
-                        <canvas id="myChartVote" width="300" height="180"></canvas> 
+                        <canvas id="myChartVote" width="200" height="180"></canvas> 
                         <h3>GENDER</h3>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="pie-box">
 <!--                         <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i> -->
-                        <canvas id="myChartStatus" width="300" height="180"></canvas>
+                        <canvas id="myChartStatus" width="200" height="180"></canvas>
                         <h3>STATUS</h3>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
     <div id="sticky-anchor"></div>
     <div class="sidebar bg-primary col-md-3" id="sidebar" style="height: 100vh">
         <div class="total-container">
-           <h4><span id="total_voices">9</span> VOICES</h4>
+           <h4><span id="total_voices">11</span> VOICES</h4>
         </div>    
 
         <!--checkboxes:status--> 
@@ -267,20 +267,37 @@
     <!--voice template/data goes in row-->
     <script id="voice-template" type="text/html">
         <div class="col-md-4 voice">
+        <li>
             <div class="thumbnail">
                 <img class="img-responsive" src="<%= img %>" alt="voice-img">
                 <div class="caption">
                     <div class="detail">
-                        <span><%= name %>. <%= country %>, <%= age %>yrs old. <%= group %>.</span>
+                        <span><%= name %><br></span>
+                         <span class="peopleinfo"><%= country %>.<br> <%= age %>yrs old. <br><br></span>
+                         <div style="background-color: #4A174F; width: 230px; border-radius: 15px;">
+                         <center><span class="peopleinfo" id="peopleinfo1"><%= group %></span></center>
+                         </div>
+<!--                     <div class="description">
+                        <p class="vote">Would vote for  <br><span><b><%= vote %></b></span></p>                  
+                    </div> -->
                     </div>
                 </div>
             </div>
+        </li>
         </div>
-        <div class="description">            
-        </div> 
     </script>
- 
-    <!--issue template-->
+
+
+    <!--get status/group data-->
+    <script id="status_template" type="text/html">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="<%= group %>"> <%= group %>
+            </label>
+        </div>
+    </script>
+
+    <!--get issue data-->
     <script id="issue_template" type="text/html">
         <div class="checkbox">
             <label>

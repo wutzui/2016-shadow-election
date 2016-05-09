@@ -4,7 +4,7 @@ var voices = [
     "id": 1,
     "img": "img/cobyscarborough.png",
     "name": "Coby Scarborough",
-    "country": "United States",
+    "country": "From USA",
     "age": 46,
     "gender": "Female",
     "group": "Disenfranchised Felons",
@@ -41,7 +41,7 @@ var voices = [
     "id": 3,
     "img": "img/MwewaSumbwe.png",
     "name": "Mwewa Sumbwe",
-    "country": "From Guam, living in USA",
+    "country": "From Zambia, living in USA",
     "age": 20,
     "gender": "Female",
     "group": "Undocumented Residents",
@@ -53,7 +53,7 @@ var voices = [
       "Environmental Issues",
     ],
     "news": "Yes",
-    "description": "“I feel like politicians don’t ever do their job. They’re too afraid nowadays to do what they believe in. Republicans seem to miss the fact that most immigrants have conservative views, but they push them away, they’re losing a huge voting block right there. Yes, certain people don’t even vote but it’s a changing America. Being from a background where you can’t do it, you’d appreciate your vote even more.",
+    "description": "I feel like politicians don’t ever do their job. They’re too afraid nowadays to do what they believe in. Republicans seem to miss the fact that most immigrants have conservative views, but they push them away, they’re losing a huge voting block right there. Yes, certain people don’t even vote but it’s a changing America. Being from a background where you can’t do it, you’d appreciate your vote even more.",
   },
   {
     "id": 4,
@@ -76,7 +76,7 @@ var voices = [
     "id": 5,
     "img": "img/StevenJohnson.png",
     "name": "Steven Johnson",
-    "country": "USA",
+    "country": "From USA",
     "age": 48,
     "gender": "Male",
     "group": "Disenfranchised Felons",
@@ -148,7 +148,7 @@ var voices = [
     "id": 9,
     "img": "img/EstephaniaMaupome.png",
     "name": "Estephania Maupome",
-    "country": "From Mexico, living in USA for 11 years",
+    "country": "From Mexico, living in USA for 11 yrs",
     "age": 24,
     "gender": "Female",
     "group": "Undocumented Residents",
@@ -161,6 +161,51 @@ var voices = [
     "news": "Yes",
     "description": "I love politics. I like to get involved into something that’s gonna affect not only my life but the future generations. Why can’t I still put my opinion and my voice into the country that I live in? It’s frustrating. I want truth and honesty from the candidates. I don’t want them to tell me they’ll give me free things. I want to see the strategy how to make things change. When I see Trump I feel offended and embarrassed as an American. It’s not only Americans watching him but the entire world. Hillary Clinton is more about the big banks. I wish a woman got elected. But not if it’s so crooked and dishonest. I would vote for Bernie Sanders.",
 
+  },
+  {
+    "id": 10,
+    "img": "img/Sebastian.png",
+    "name": "Sebastian Negron-Reichard",
+    "country": "From Puerto Rico, studying in Philadelphia",
+    "age": 22,
+    "gender": "Male",
+    "group": "US Territory Residents",
+    "vote": "Undecided",
+    "issue": [
+      "Climate Change",
+      "Economic Equality",
+      "Tax Reform",
+      "Foreign Policy",
+      "Health Care",
+      "Homeland Security"
+
+    ],
+    "news": "Yes",
+    "description": "Hillary and Bernie have spoken very highly of Puerto Rico and their interest has been helping out. Trump is also talking about Puerto Rico, but not about the debt issue—he just says he loves Puerto Ricans. I think he’s just trying to make clear that he’s not putting us in his immigrant pocket.",
+
+  },
+   {
+    "id": 11,
+    "img": "img/AbigailKoerner.png",
+    "name": "Abigail Koerner",
+    "country": "From USA, works with Vote16USA",
+    "age": 16,
+    "gender": "Female",
+    "group": "Under 18",
+    "vote": "Bernie Sanders",
+    "issue": [
+      "Climate Change",
+      "Economic Equality",
+      "Tax Reform",
+      "Foreign Policy",
+      "Health Care",
+      "Homeland Security"
+
+    ],
+    "news": "Yes",
+    "description": "At the age of 16 most kids have jobs and pay taxes. A lot of 16-years-olds in this country are pregnant or already have children, they’re raising families. 16-years-olds have these responsibilities and should be considered eligible to vote. They are supporting the economy, social and political infrastructures. Most youth are very liberal. This population would really swing the election how it’s going right now. A lot of youth across the country are supporting Bernie Sanders. I support him. I really agree with everything he says. If this group was able to vote that Bernie would have more momentum.",
+
   }
+
 
 ]

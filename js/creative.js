@@ -45,7 +45,6 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-    // Sticky sidebar
     function sticky_relocate() {
         var window_top = $(window).scrollTop();
         var div_top = $('#sticky-anchor').offset().top;
@@ -62,6 +61,5 @@
         $(window).scroll(sticky_relocate);
         sticky_relocate();
     });
-
 
 })(jQuery); // End of use strict
