@@ -63,7 +63,7 @@
                         <a class="page-scroll" href="#pollInfo">SURVEY INFO</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#voice-content">Result</a>
+                        <a class="page-scroll" href="#voice-content">VOICES</a>
                     </li>
                     <li>
                         <a href="about.html" id="about">About</a>
@@ -81,8 +81,8 @@
                 <h1 style="letter-spacing: 4px">SHADOW ELECTIONS</h1>
                 <hr>
                 <p>Shadow Elections is a collaboration between graduate students from NYU Studio 20 and Parsons School of Art, Media and Technology, and Fusion, a media company striving to listen to and elevate the voices of those who too often aren't heard.</p>
-                <a href="#pollInfo" class="btn btn-primary btn-xl page-scroll">GO TO SURVEY INFORMATION</a>
-                <a href="#voice-content" class="btn btn-primary btn-xl page-scroll">GO TO VOICES</a>
+                <a href="#pollInfo" class="btn btn-primary btn-xl page-scroll">GO TO SURVEY INFO</a>
+                <a href="#voice-content" class="btn btn-primary btn-xl page-scroll">GO TO THE VOICES</a>
             </div>
         </div>
     </header>
@@ -95,7 +95,7 @@
 <!--                     <hr class="light" style="border-color: #4A174F"> -->
                     </div> 
                     <div class="col-md-2" style="text-align: center;">
-                        <p data-count-from="100" data-count-to="297" class="stats">000</p>
+                        <p data-count-from="000" data-count-to="339" class="stats">000</p>
                         <p>RESPONSES</p>
                     </div>
             </div>
@@ -103,21 +103,21 @@
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="pie-box">
 <!--                         <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i> -->
-                        <canvas id="myChart" width="180" height="180"></canvas>
+                        <canvas id="myChart" width="300" height="180"></canvas>
                         <h3>VOTE</h3>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="pie-box">
 <!--                         <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i> -->
-                        <canvas id="myChartVote" width="180" height="180"></canvas> 
+                        <canvas id="myChartVote" width="300" height="180"></canvas> 
                         <h3>GENDER</h3>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="pie-box">
 <!--                         <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i> -->
-                        <canvas id="myChartStatus" width="180" height="180"></canvas>
+                        <canvas id="myChartStatus" width="300" height="180"></canvas>
                         <h3>STATUS</h3>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
             <br><br>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="http://goo.gl/forms/x6zBY7tE0A" target="_blank" class="btn btn-default btn-xl">Take the Poll Here</a>
+                    <a href="http://goo.gl/forms/x6zBY7tE0A" target="_blank" class="btn btn-default btn-xl">Take the Survey Here</a>
                 </div>
             </div>
         </div>
@@ -272,26 +272,15 @@
                 <div class="caption">
                     <div class="detail">
                         <span><%= name %>. <%= country %>, <%= age %>yrs old. <%= group %>.</span>
-<!--                     <div class="description">
-                        <p class="vote">Would vote for  <br><span><b><%= vote %></b></span></p>                  
-                    </div> -->
                     </div>
                 </div>
             </div>
         </div>
+        <div class="description">            
+        </div> 
     </script>
-
-
-    <!--get status/group data-->
-    <script id="status_template" type="text/html">
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="<%= group %>"> <%= group %>
-            </label>
-        </div>
-    </script>
-
-    <!--get issue data-->
+ 
+    <!--issue template-->
     <script id="issue_template" type="text/html">
         <div class="checkbox">
             <label>

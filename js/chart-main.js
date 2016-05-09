@@ -38,107 +38,107 @@ $(document).ready(function(){
 
   var data = [
     {
-        value: 92,
+        value: 112,
         color:"#1A2986",
         highlight: "#1A2986",
-        label: "Hilary Clinton"
+        label: "HILARY CLINTON"
     },
     {
-        value: 29,
+        value: 27,
         color: "#442271",
         highlight: "#442271",
-        label: "Donald Trump"
+        label: "DONALD TRUMP"
     },
     {
-        value: 112,
+        value: 126,
         color: "#591E66",
         highlight: "#591E66",
-        label: "Bernie Sanders"
+        label: "BERNIE SANDERS"
     },
     {
-        value: 15,
+        value: 17,
         color: "#6B1B5D",
         highlight: "#6B1B5D",
-        label: "Ted Cruz"
+        label: "TED CRUZ"
     },
     {
         value: 17,
         color: "#821851",
         highlight: "#821851",
-        label: "John Kasich"
+        label: "JOHN KASICH"
     },
     {
-        value: 32,
+        value: 40,
         color: "#941548",
         highlight: "#941548",
-        label: "Undecided"
+        label: "UNDECIDED"
     }
 
   ]
 
   var data2 = [
     {
-        value: 118,
+        value: 207,
         color:"#1A2986",
         highlight: "#1A2986",
-        label: "Male"
+        label: "MALE"
     },
     {
-        value: 108,
+        value: 131,
         color: "#BA0F35",
         highlight: "#BA0F35",
-        label: "Female"
+        label: "FEMALE"
     }
   ]
 
   var data3 = [
     {
-        value: 9,
+        value: 2,
         color:"#1A2986",
         highlight: "#1A2986",
-        label: "Under 18"
+        label: "FELONS"
     },
     {
-        value: 1,
+        value: 10,
         color: "#442271",
         highlight: "#442271",
-        label: "Undocumented Res"
+        label: "NON-US CITIZEN"
     },
     {
-        value: 20,
+        value: 9,
         color: "#591E66",
         highlight: "#591E66",
-        label: "Int Students"
+        label: "PERMANENT RESIDENT"
     },
     {
-        value: 233,
+        value: 27,
         color: "#6B1B5D",
         highlight: "#6B1B5D",
-        label: "US Territory Res"
+        label: "INTERNATIONAL STUDENT"
     },
     {
         value: 13,
         color: "#821851",
         highlight: "#821851",
-        label: "Foreigners"
+        label: "INTERNATIONAL WORKER"
     },
     {
-        value: 13,
+        value: 3,
         color: "#941548",
         highlight: "#941548",
-        label: "Int Workers"
+        label: "UNDOCUMENTED RESIDENT"
     },
     {
-        value: 0,
+        value: 7,
         color: "#AA113D",
         highlight: "#AA113D",
-        label: "Convicted Felons"
+        label: "UNDER 18"
     },
     {
-        value: 23,
+        value: 268,
         color: "#BA0F35",
         highlight: "#BA0F35",
-        label: "Other"
+        label: "IN US TERITORIES"
     }
   ]
 

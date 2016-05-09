@@ -73,5 +73,15 @@ $(document).ready(function(){
     opacity:($voteChecked.css('opacity')== 0.5) ? 1 : 0.5});
   })
 
+// =================================================================================
+// click for popup.
+// =================================================================================
+
+  $('#fjs_1').click(function(){
+    var $popup = $('.description');
+    $popup.show('slow', function(){
+      $(this).append('<p><%= description %></p>');
+    });
+  })
 
 });
