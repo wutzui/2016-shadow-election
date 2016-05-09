@@ -112,7 +112,7 @@ var voices = [
     "id": 7,
     "img": "img/MichaelTorres.png",
     "name": "Michael Torres",
-    "country": "From USA, living in Guam",
+    "country": "From USA, currently living in Guam",
     "age": 59,
     "gender": "Male",
     "group": "US Territory Residents",
